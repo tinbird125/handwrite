@@ -1,0 +1,14 @@
+.\Obj\lcd_touch.o: ..\Source\Lcd\LCD_touch.C
+.\Obj\lcd_touch.o: C:\Keil_v5\ARM\Inc\NXP\LPC17xx\lpc17xx.h
+.\Obj\lcd_touch.o: C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h
+.\Obj\lcd_touch.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\Obj\lcd_touch.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\Obj\lcd_touch.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\Obj\lcd_touch.o: C:\Keil_v5\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h
+.\Obj\lcd_touch.o: ..\Source\Lcd\touch.h
+.\Obj\lcd_touch.o: ..\Source\Lcd\SYS.H
+.\Obj\lcd_touch.o: ..\Source\Lcd\lcd.h
+.\Obj\lcd_touch.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+.\Obj\lcd_touch.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\math.h
+.\Obj\lcd_touch.o: ..\Source\Lcd\exti.h
+.\Obj\lcd_touch.o: ..\Source\I2C\i2c.h

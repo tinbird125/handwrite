@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C 
+-I "D:\Program Files (x86)\keil4\ARM\RV31\INC" 
+-I "D:\Program Files (x86)\keil4\ARM\CMSIS\Include" 
+-I "D:\Program Files (x86)\keil4\ARM\Inc\NXP\LPC17xx" 
+-DUSE_STDPERIPH_DRIVER -o ".\Obj\core_cm3.o" --omf_browse ".\Obj\core_cm3.crf" --depend ".\Obj\core_cm3.d" "..\Source\Cmsis\core_cm3.c"

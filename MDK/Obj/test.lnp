@@ -1,0 +1,5 @@
+--cpu Cortex-M3 ".\obj\main.o" ".\obj\lcd.o" ".\obj\lcd_touch.o" ".\obj\i2c.o" ".\obj\recognize.o" ".\obj\bayes.o" ".\obj\uart.o" ".\obj\retarget.o" ".\obj\startup_lpc17xx.o" ".\obj\system_lpc17xx.o" 
+--library_type=microlib --strict --scatter ".\Obj\test.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\List\test.map" -o .\Obj\test.axf

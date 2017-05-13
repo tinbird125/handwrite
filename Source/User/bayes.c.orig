@@ -1,0 +1,50 @@
+/***贝叶斯****/
+float p1(int i, int Ni,int N) { //先验概率
+    float p1;
+    p1 = Ni / N;
+		return p1;
+}
+float p2(int i, int Ni,int j) { //x的第j个分量为1的概率
+    int k, j;
+    int xx[20][25];	//样品总数
+    long xkj = 0;
+    float p2;
+        for(k = 0; k < Ni; k++) {
+            xkj += xx[k][j];
+        }
+        p2 = (xkj + 1) / (Ni + 2);
+				return p2;
+		
+
+}
+float p3(int i, float p2Arr[62][25]) { //类条件概率
+    int j;
+    long mul;
+		float p3=0;
+    for(j = 0; j < 25; j++) {
+        if(1) {
+            mul *= p2Arr[i][j];
+            p3 = mul;return p3;
+
+        } else {
+            mul *= 1 - p2Arr[i][j];
+            p3 = mul;return p3;
+        }
+
+
+    }
+		return p3;
+
+
+}
+float  p4(int i, float p3,float p2Arr[62][25]) { //后验概率
+    int k;
+    float temp = 0;
+		float p4;
+    for(k = 0; k < 62; k++) {
+        temp +=	p1(k, 20) * p3(k, p2Arr);
+    }
+    p4 =  (p1(i, 20) * p3(i, p2Arr[25])) / temp;
+		return p4;
+
+}
