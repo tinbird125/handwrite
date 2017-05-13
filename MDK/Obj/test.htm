@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\test.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\test.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.02 [Build 28]: Last Updated: Sat May 13 14:24:26 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.02 [Build 28]: Last Updated: Sat May 13 16:20:59 2017
 <BR><P>
 <H3>Maximum Stack Usage =        240 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -71,7 +71,7 @@ Function Pointers
  <LI><a href="#[5]">UsageFault_Handler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
  <LI><a href="#[a]">WDT_IRQHandler</a> from startup_lpc17xx.o(.text) referenced from startup_lpc17xx.o(RESET)
  <LI><a href="#[2d]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_lpc17xx.o(.text)
- <LI><a href="#[2e]">fputc</a> from retarget.o(i.fputc) referenced from printf3.o(i.__0printf$3)
+ <LI><a href="#[2e]">fputc</a> from retarget.o(i.fputc) referenced from printf1.o(i.__0printf$1)
  <LI><a href="#[2b]">main</a> from main.o(i.main) referenced from entry8.o(.ARM.Collect$$$$00000009)
 </UL>
 <P>
@@ -833,16 +833,16 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart
 </UL>
 
-<P><STRONG><a name="[79]"></a>__0printf$3</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3), UNUSED)
+<P><STRONG><a name="[79]"></a>__0printf$1</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printf1.o(i.__0printf$1), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[9c]"></a>__1printf$3</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3), UNUSED)
+<P><STRONG><a name="[9c]"></a>__1printf$1</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf1.o(i.__0printf$1), UNUSED)
 
-<P><STRONG><a name="[82]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf3.o(i.__0printf$3))
+<P><STRONG><a name="[83]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf1.o(i.__0printf$1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCharacter
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNum
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchMain
 </UL>
 
@@ -890,35 +890,35 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
 </UL>
-<BR>[Address Reference Count : 1]<UL><LI> printf3.o(i.__0printf$3)
+<BR>[Address Reference Count : 1]<UL><LI> printf1.o(i.__0printf$1)
 </UL>
-<P><STRONG><a name="[7e]"></a>getCharacter</STRONG> (Thumb, 926 bytes, Stack size 88 bytes, recognizecode.o(i.getCharacter))
-<BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = getCharacter &rArr; getCount
-</UL>
-<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hasIntersection
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCount
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;minArr
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;maxArr
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchMain
-</UL>
-
-<P><STRONG><a name="[83]"></a>getCount</STRONG> (Thumb, 48 bytes, Stack size 28 bytes, recognizecode.o(i.getCount))
+<P><STRONG><a name="[7e]"></a>getCount</STRONG> (Thumb, 48 bytes, Stack size 28 bytes, recognizecode.o(i.getCount))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = getCount
 </UL>
-<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hasIntersection
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hasIntersection
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCharacter
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNum
+</UL>
+
+<P><STRONG><a name="[80]"></a>getNum</STRONG> (Thumb, 580 bytes, Stack size 80 bytes, recognizecode.o(i.getNum))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = getNum &rArr; getCount
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hasIntersection
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCount
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;minArr
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;maxArr
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchMain
 </UL>
 
 <P><STRONG><a name="[90]"></a>getXY</STRONG> (Thumb, 134 bytes, Stack size 0 bytes, recognize.o(i.getXY))
 <BR><BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touchMain
 </UL>
 
-<P><STRONG><a name="[81]"></a>hasIntersection</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, recognizecode.o(i.hasIntersection))
-<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCount
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCharacter
+<P><STRONG><a name="[7f]"></a>hasIntersection</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, recognizecode.o(i.hasIntersection))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCount
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNum
 </UL>
 
 <P><STRONG><a name="[84]"></a>initGUI</STRONG> (Thumb, 144 bytes, Stack size 8 bytes, recognize.o(i.initGUI))
@@ -970,16 +970,16 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry8.o(.ARM.Collect$$$$00000009)
 </UL>
-<P><STRONG><a name="[80]"></a>maxArr</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, recognize.o(i.maxArr))
+<P><STRONG><a name="[82]"></a>maxArr</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, recognize.o(i.maxArr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = maxArr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCharacter
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNum
 </UL>
 
-<P><STRONG><a name="[7f]"></a>minArr</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, recognize.o(i.minArr))
+<P><STRONG><a name="[81]"></a>minArr</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, recognize.o(i.minArr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = minArr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCharacter
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNum
 </UL>
 
 <P><STRONG><a name="[7d]"></a>sendchar</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, uart.o(i.sendchar))
@@ -999,10 +999,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Touch_Adjust
 </UL>
 
-<P><STRONG><a name="[8b]"></a>touchMain</STRONG> (Thumb, 186 bytes, Stack size 8 bytes, recognize.o(i.touchMain))
+<P><STRONG><a name="[8b]"></a>touchMain</STRONG> (Thumb, 188 bytes, Stack size 8 bytes, recognize.o(i.touchMain))
 <BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = touchMain &rArr; Touch_Adjust &rArr; Drow_Touch_Point &rArr; LCD_DrawLine &rArr; LCD_DrawPoint &rArr; LCD_SetCursor &rArr; wr_reg &rArr; wr_dat &rArr; lcd_send
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getCharacter
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getNum
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;load_Drow_Dialog
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getXY
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay1ms
@@ -1015,7 +1015,7 @@ Global Symbols
 <LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Convert_Pos
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear_Area
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1146,10 +1146,10 @@ Local Symbols
 <LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EINTInit
 </UL>
 
-<P><STRONG><a name="[7a]"></a>_printf_core</STRONG> (Thumb, 436 bytes, Stack size 96 bytes, printf3.o(i._printf_core), UNUSED)
+<P><STRONG><a name="[7a]"></a>_printf_core</STRONG> (Thumb, 334 bytes, Stack size 88 bytes, printf1.o(i._printf_core), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$3
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$1
 </UL>
 <P>
 <H3>

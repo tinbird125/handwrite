@@ -48,7 +48,7 @@ I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
 I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
 I (C:\Keil_v5\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x4F583772)
 I (..\Source\I2C\i2c.h)(0x4D13069A)
-F (..\Source\User\recognize.c)(0x5916A69A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil_v5\ARM\RV31\INC -I C:\Keil_v5\ARM\CMSIS\Include -I C:\Keil_v5\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognize.o" --omf_browse ".\Obj\recognize.crf" --depend ".\Obj\recognize.d")
+F (..\Source\User\recognize.c)(0x5916AECB)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil_v5\ARM\RV31\INC -I C:\Keil_v5\ARM\CMSIS\Include -I C:\Keil_v5\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognize.o" --omf_browse ".\Obj\recognize.crf" --depend ".\Obj\recognize.d")
 I (..\Source\Lcd\sys.h)(0x4D130B96)
 I (..\Source\User\recognize.h)(0x59167241)
 I (..\Source\Lcd\lcd.h)(0x5916A434)
@@ -65,7 +65,7 @@ I (C:\Keil_v5\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
 I (..\Source\User\uart.h)(0x59044A3C)
 I (C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
 I (..\Source\User\RecognizeCode.h)(0x59169E76)
-F (..\Source\User\RecognizeCode.c)(0x59169E87)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil_v5\ARM\RV31\INC -I C:\Keil_v5\ARM\CMSIS\Include -I C:\Keil_v5\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognizecode.o" --omf_browse ".\Obj\recognizecode.crf" --depend ".\Obj\recognizecode.d")
+F (..\Source\User\RecognizeCode.c)(0x5916C1E9)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil_v5\ARM\RV31\INC -I C:\Keil_v5\ARM\CMSIS\Include -I C:\Keil_v5\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognizecode.o" --omf_browse ".\Obj\recognizecode.crf" --depend ".\Obj\recognizecode.d")
 I (..\Source\Lcd\sys.h)(0x4D130B96)
 I (..\Source\User\recognize.h)(0x59167241)
 I (..\Source\Lcd\lcd.h)(0x5916A434)

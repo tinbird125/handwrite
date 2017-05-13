@@ -300,11 +300,11 @@ int minArr(int a[200], int size) {
 *   Return:         cnt:
 *******************************************************************************/
 void touchMain() {
-    int flag = 1, time;
-    char result;
+    int flag = 1,time,b=0,resultNum;
+    char resultChar;
     //获取点数point属于0~200
     while(1) { //检测屏幕是否有操作
-        if(key == 1) 															//KEY0按下,则执行校准程序
+				if(key == 1) 															//KEY0按下,则执行校准程序
         {
             LCD_Clear(WHITE);											//清屏
             Touch_Adjust();  												//屏幕校准
@@ -325,6 +325,7 @@ void touchMain() {
                 }
             } while(PEN == 0);
             Pen_Int_Set(1);
+						
         }
 //////////////////////////////////////////////////
         else///按键松开
@@ -332,8 +333,8 @@ void touchMain() {
             delay1ms(20);				//停笔延时
             if(point > 0 ) {
                 if(flag == 0) {
-                    result = getCharacter(x, y, point);
-                    printf("\n %c", result);
+                    resultNum = getNum(x, y, point);
+                    printf("\n%d", resultNum);
                     point = 0;
                     LCD_Clear_Area(White, 219, 238, 1, 101);
                     flag = 1;

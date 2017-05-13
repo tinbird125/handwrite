@@ -52,9 +52,7 @@ int getCount(int start, int end, int pos, int a[200]) {
 *   Return:         cnt:
 *******************************************************************************/
 int getNum(int x[200], int y[200], int point) {
-    int start, end, deltaX, deltaY, mX, mY, j, xCount = 0, yCount = 0, yPos, temp,
-                                               x45, y45, x45count, y45count, y25, y25count,
-                                               minX, maxX, minY, maxY;
+    int start, end, deltaX, deltaY, mX, mY, j, xCount = 0, yCount = 0, minX, maxX, minY, maxY, yPos, xPos , temp;
     start = 2;
     end = point - 2;
     minX = minArr(x, end) ;
@@ -63,114 +61,131 @@ int getNum(int x[200], int y[200], int point) {
     maxY = maxArr(y, end);
     deltaX = maxX - minX;
     deltaY = maxY - minY;
-    x45 = deltaX * 7 / 8 + minArr(x, end);
-    y25 = deltaY * 3 / 8 + minArr(y, end);
-    y45 = deltaY * 4 / 5 + minArr(y, end);
     mX = minX  + deltaX / 2;
     mY = minY  + deltaY / 2;
 
-    for(j = start; j < end; j++) {
-        if(x[j] > mX && x[j + 1] <= mX || x[j] < mX && x[j + 1] >= mX) {
-            xCount++;
-        }
-        if(y[j] > mY && y[j + 1] <= mY || y[j] < mY && y[j + 1] >= mY) {
-
-            yCount++;
-        }
-
-    }
+    xCount = getCount(start, end, mX, x);
+    yCount = getCount(start, end, mY, y);
     printf("\nxCount:%d,yCount:%d", xCount, yCount);
 
-    if(deltaX < deltaY / 3) {
-        return 1;
-    }
-    else if(yCount == 1 && xCount == 2) {
-        return 7;
-
-    }
-    else if(yCount >= 2 && xCount >= 4) {
-        return 8;
-
-    }
-    else if(xCount == 2 && yCount == 2) {
-        y25count = 0;
-        y45count = 0;
-        for(j = start; j < end; j++) {
-            if(x[j] >= x45 && x[j + 1] < x45 || x[j] <= x45 && x[j + 1] > x45) {
-                x45count ++;
-            }
-            if(y[j] >= y45 && y[j + 1] < y45 || y[j] <= y45 && y[j + 1] > y45) {
-                y45count ++;
-            }
+    if(xCount == 1 && yCount == 1) {
+        if(deltaX < deltaY / 3) {
+            return 1;
         }
-        printf("\n%d,%d ", x45count, y45count);
-        if(x45count > 1 && y45count > 1) {
+
+    }
+    else if(  xCount == 2 && yCount == 1) {
+        yCount  = 0;
+        yPos = minY + deltaY % 1 / 6;
+        yCount = getCount(start, end, yPos, y);
+        if(yCount > 1) {
+            return 9;
+
+        }
+        else {
+            return 7;
+        }
+
+
+    }
+////////////////////ÅÐ¶Ï0£¬4////////////////////////////////////////////
+    else if(xCount == 2 && yCount == 2) {
+        yCount = 0;
+        yPos = minY + deltaY * 3 / 4;
+        yCount = getCount(start, end, yPos, y);
+        if(yCount > 1) {
             return 0;
         }
         else {
-
             return 4;
         }
 
     }
+////////////////////ÅÐ¶Ï9£¬6£¬2£¬5////////////////////////////////////////////
+    else if(xCount == 3 && yCount == 1) {
+        xCount = 0;
+        yCount = 0;
+        yPos = minY + deltaY * 4 / 5;
+        yCount = getCount(start, end, yPos, y);
+        if(yCount > 1) { ////6,5
+            yCount = 0;
+            yPos = minY + deltaY * 3 / 5;
+            yCount = getCount(start, end, yPos, y);
+            if(yCount > 1) {
+                return 6;
+
+            }
+            return 5;
+
+        }
+        else {
+            yCount = 0;
+            yPos = minY + deltaY * 1 / 5;
+            yCount = getCount(start, end, yPos, y);
+            if(yCount > 1) {
+                xCount = 0;
+                for(j = start; j < end; j++) {
+                    if(y[j] < mY && hasIntersection(x, j, mX)) {
+                        xCount++;
+
+                    }
+
+                }
+                if(xCount > 1) {
+                    return 9;
+                }
+                else {
+                    return 2;
+                }
+
+            }
+            else {
+                yPos = minY + deltaY / 4;
+                for(j = start; j < end; j++) {
+                    if(hasIntersection(y, j, yPos)) {
+                        temp = x[j];
+                    }
+                }
+								if(temp<mX){
+
+return 5;}
+
+                return 2;
+            }
+        }
+
+    }
+
+
+////////////////////ÅÐ¶Ï6£¬5£¬////////////////////////////////////////////
+    else if( xCount == 3 && yCount == 2) {
+        yCount = 0;
+        yPos = minY + deltaY * 4 / 5;
+        yCount = getCount(start, end, yPos, y);
+
+        if(yCount > 1) {
+            return 6;
+        }
+        else {
+            return 5;
+        }
+    }
+    else if( xCount == 3 && yCount == 3) {
+        return 5;
+    }
+
     else if (xCount == 4 && yCount == 1) {
         return 3;
 
     }
-    else if(yCount == 2 && xCount == 3) {
-        y25count = 0;
-        y45count = 0;
-        x45count = 0;
+    else if( xCount >= 4 && yCount >= 2 ) {
+        return 8;
 
-        for(j = start; j < end; j++) {
-            if(x[j] >= x45 && x[j + 1] < x45 || x[j] <= x45 && x[j + 1] > x45) {
-                x45count ++;
-            }
-            if(y[j] >= y45 && y[j + 1] < y45 || y[j] <= y45 && y[j + 1] > y45) {
-                y45count ++;
-            }
-        }
-        if(y45count > 1) {
-            return 6;
-        }
-        else {
-
-            return 5;
-        }
     }
-    else if(yCount == 1 && xCount == 3) {
-        int temp;
-        y25count = 0;
-        y45count = 0;
-        for(j = start; j < end; j++) {
-            if(y[j] >= y25 && y[j + 1] < y25 || y[j] <= y25 && y[j + 1] > y25) {
-                y25count++;
-                temp = x[j];
-            }
-            if(y[j] >= y45 && y[j + 1] < y45 || y[j] <= y45 && y[j + 1] > y45) {
-                y45count++;
 
-            }
-        }
-
-        if(y25count > 1 && y45count < 2) {
-
-            return 9;
-        }
-        if(y25count < 2 && y45count >= 2) {
-            return 6;
-
-        }
-        else {
-            if(temp < mX) {
-                return 5;
-            } else {
-                return 2;
-            }
-        }
-    }
-    return 255;
 }
+
+
 /*******************************************************************************
 *        »ñÈ¡×ÖÄ¸
 *   name:
@@ -180,7 +195,7 @@ int getNum(int x[200], int y[200], int point) {
 *   Return:         cnt:
 *******************************************************************************/
 char getCharacter(int x[200], int y[200], int point) {
-    int start, end, deltaX, deltaY, mX, mY, j, xCount = 0, yCount = 0, minX, maxX, minY, maxY, yPos,xPos temp;
+    int start, end, deltaX, deltaY, mX, mY, j, xCount = 0, yCount = 0, minX, maxX, minY, maxY, yPos, xPos , temp;
     start = 2;
     end = point - 2;
     minX = minArr(x, end) ;
@@ -206,8 +221,6 @@ char getCharacter(int x[200], int y[200], int point) {
 
 /////////////////////////////////		ÅÐ¶Ïj£¬L		///////////////////////////////////////////////////
     if(xCount == 1 && yCount == 1) {
-        xCount == 0;
-        yCount == 0;
 
         for(j = start; j < end; j++) {
 
@@ -310,8 +323,6 @@ char getCharacter(int x[200], int y[200], int point) {
 
         }
 
-
-
     }
 
     ///////////////ÅÐ¶Ï		o	,p,q		/////////////////////////////////////////////////////////////////
@@ -335,6 +346,8 @@ char getCharacter(int x[200], int y[200], int point) {
                 return 'p';
             }
             else {
+
+
                 return 'q';
             }
 
@@ -379,7 +392,6 @@ char getCharacter(int x[200], int y[200], int point) {
                     temp = x[j];
 
                 }
-
             }
             if(temp < mX) {
                 return 'z';
@@ -388,30 +400,26 @@ char getCharacter(int x[200], int y[200], int point) {
                 return 's';
             }
 
-
         }
-
-
-
     }
 
     ///////////////ÅÐ¶Ï		e,y		/////////////////////////////////////////////////////////////////
     else if(xCount == 3 && yCount == 2) {
-				xCount = 0;
+        xCount = 0;
         xPos = minX + deltaY * 3 / 4;
-      for(j=start;j<end;j++){
-			if(hasIntersection(x,j,xPos)){
-				temp = y[j];
-}
-			if(temp>minY+mY/2){
-return 'e';
+        for(j = start; j < end; j++) {
+            if(hasIntersection(x, j, xPos)) {
+                temp = y[j];
+            }
+            if(temp > mY + mY  / 2) {
+                return 'e';
 
-}
-else{
-return 'y';
+            }
+            else {
+                return 'y';
 
-}
-}
+            }
+        }
 
 
     }
