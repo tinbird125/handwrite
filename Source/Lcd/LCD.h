@@ -160,7 +160,7 @@ extern void LCD_PutPixel       (unsigned int x, unsigned int y);
 extern void LCD_SetTextColor   (unsigned short color);
 extern void LCD_SetBackColor   (unsigned short color);
 extern void LCD_Clear          (unsigned short color);
-extern void LCD_Clear_Area          (unsigned short color,u8 width,u16 height,u8 x,u16 y);
+extern void LCD_Clear_Area          (u16 color,u8 width,u16 height,u8 x,u16 y);
 extern void LCD_Touch_WindowMax          (u8 width,u16 hegith);
 extern void LCD_DrawChar       (unsigned int x, unsigned int y, unsigned short *c);
 extern void LCD_DisplayChar    (unsigned int ln, unsigned int col, unsigned char  c);
@@ -173,7 +173,7 @@ extern void LCD_Bmp            (unsigned int x, unsigned int y, unsigned int w, 
 extern void LCD_Fill(u8 xsta,u16 ysta,u8 xend,u16 yend,u16 color);
 extern void LCD_DrawPoint(u16 x,u16 y);
 extern void LCD_DrawLine(u16 x1, u16 y1, u16 x2, u16 y2);
-extern void LCD_DrawRectangle(u8 x1, u16 y1, u8 x2, u16 y2);
+extern void LCD_DrawRectangle(u8 x1, u16 y1, u8 x2, u16 y2,u16 color);
 extern void Draw_Circle(u8 x0,u16 y0,u8 r);
 extern void LCD_ShowChar(u8 x,u16 y,u8 num,u8 size,u8 mode);
 extern void LCD_ShowNum(u8 x,u16 y,u32 num,u8 len,u8 size);

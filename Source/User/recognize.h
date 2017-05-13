@@ -21,14 +21,15 @@
 ************************************/
 
 
-/*****函数区*****/
-extern void touchMain(void);
+/*****函数区*****/ void touchMain(void);
 // extern void LCD_ShowStr(u8 x, u16 y, const u8 *p, u16 color);
 // extern void Init_Color_Area(u16 x0, u16 y0, u16 color, u16 size);
 // extern void Init_Color_Area_Diy(u16 start_x0, u16 start_y0, u16 size);
 // extern void delay1ms(unsigned int delay1msdata);
 // extern u8 KEY_Scan(void);
 // extern void Choose_Pen_Color(void);
-extern void initGUI(void);
+ void initGUI(void);
+int minArr(int a[200],int endPoint);
+int maxArr(int a[200],int endPoint);
 // extern void Load_Drow_Dialog(void);
 

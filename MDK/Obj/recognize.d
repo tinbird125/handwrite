@@ -14,4 +14,4 @@
 .\Obj\recognize.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\string.h
 .\Obj\recognize.o: ..\Source\User\uart.h
 .\Obj\recognize.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
-.\Obj\recognize.o: ..\Source\User\bayes.h
+.\Obj\recognize.o: ..\Source\User\RecognizeCode.h
