@@ -1,0 +1,1196 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+G:\Users\YY\Desktop\毕设\手写识别 - 副本 (2)\handwrite\MDK\LCD_1768_3.2.uvproj
+Project File Date:  05/13/2017
+
+<h2>Output:</h2>
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\recognize.c
+格式化  ..\Source\User\recognize.c
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12452 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+linking...
+Program Size: Code=12456 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+linking...
+Program Size: Code=12452 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+linking...
+Program Size: Code=12452 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+linking...
+Program Size: Code=12452 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+linking...
+Program Size: Code=12456 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+linking...
+Program Size: Code=12452 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+linking...
+Program Size: Code=12452 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12460 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12444 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling LCD_touch.C...
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "delayCount" was declared but never referenced
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12444 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 7 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(320): warning:  #223-D: function "getPos" declared implicitly
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+.\Obj\test.axf: Error: L6218E: Undefined symbol getPos (referred from recognize.o).
+Target not created
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12444 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12428 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\recognize.c
+格式化  ..\Source\User\recognize.c
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\recognize.c
+不变    ..\Source\User\recognize.c
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12428 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12488 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12504 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 2 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12512 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 2 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(261): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(261): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(245): warning:  #550-D: variable "xValue" was set but never used
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(261): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(261): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(245): warning:  #550-D: variable "xValue" was set but never used
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12584 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 2 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12688 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 2 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12828 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12836 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12844 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(278): error:  #65: expected a ";"
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12840 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+linking...
+Program Size: Code=12832 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 2 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12736 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12748 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12748 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12748 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12748 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(245): warning:  #177-D: variable "i" was declared but never referenced
+..\Source\User\RecognizeCode.c(298): warning:  #940-D: missing return statement at end of non-void function "getCharacter"
+..\Source\User\RecognizeCode.c(197): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(301): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(350): warning:  #12-D: parsing restarts here after previous syntax error
+..\Source\User\RecognizeCode.c(351): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(398): warning:  #12-D: parsing restarts here after previous syntax error
+..\Source\User\RecognizeCode.c(399): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(512): warning:  #12-D: parsing restarts here after previous syntax error
+..\Source\User\RecognizeCode.c(513): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(516): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(245): warning:  #177-D: variable "i" was declared but never referenced
+..\Source\User\RecognizeCode.c(290): warning:  #940-D: missing return statement at end of non-void function "getCharacter"
+..\Source\User\RecognizeCode.c(197): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(293): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(342): warning:  #12-D: parsing restarts here after previous syntax error
+..\Source\User\RecognizeCode.c(343): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(390): warning:  #12-D: parsing restarts here after previous syntax error
+..\Source\User\RecognizeCode.c(391): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(504): warning:  #12-D: parsing restarts here after previous syntax error
+..\Source\User\RecognizeCode.c(505): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(508): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(245): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=12716 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 4 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12740 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Rebuild target 'Target 1'
+compiling main.c...
+compiling Lcd.c...
+compiling LCD_touch.C...
+compiling i2c.c...
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "delayCount" was declared but never referenced
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+compiling uart.c...
+compiling Retarget.c...
+assembling startup_LPC17xx.s...
+compiling system_LPC17xx.c...
+linking...
+Program Size: Code=12772 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 8 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12764 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "delayCount" was declared but never referenced
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12780 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 8 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12784 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(303): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(303): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12784 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(306): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(306): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(306): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(306): warning:  #177-D: variable "delayCount" was declared but never referenced
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12840 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 8 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(305): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(305): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(305): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(305): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12828 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(305): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(305): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(305): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(305): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12828 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(299): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(299): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(299): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(299): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12828 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\recognize.c
+格式化  ..\Source\User\recognize.c
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(176): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(299): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(299): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(299): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(299): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12828 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\recognize.c
+格式化  ..\Source\User\recognize.c
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(320): warning:  #174-D: expression has no effect
+..\Source\User\recognize.c(315): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12876 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(319): warning:  #174-D: expression has no effect
+..\Source\User\recognize.c(314): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(314): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(314): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(314): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12876 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(314): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(314): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(314): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(314): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12860 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(315): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12864 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(315): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12844 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(228): warning:  #187-D: use of "=" where "==" may have been intended
+..\Source\User\recognize.c(313): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(313): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(313): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(313): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12852 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(228): warning:  #187-D: use of "=" where "==" may have been intended
+..\Source\User\recognize.c(314): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(314): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(314): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(314): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12864 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\recognize.c
+格式化  ..\Source\User\recognize.c
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(229): warning:  #187-D: use of "=" where "==" may have been intended
+..\Source\User\recognize.c(315): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(315): warning:  #177-D: variable "delayCount" was declared but never referenced
+linking...
+Program Size: Code=12864 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(230): error:  #20: identifier "flag" is undefined
+..\Source\User\recognize.c(233): error:  #20: identifier "resultChar" is undefined
+..\Source\User\recognize.c(321): warning:  #550-D: variable "flag" was set but never used
+..\Source\User\recognize.c(321): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "delayCount" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "resultChar" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(231): error:  #20: identifier "flag" is undefined
+..\Source\User\recognize.c(322): warning:  #550-D: variable "flag" was set but never used
+..\Source\User\recognize.c(322): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "delayCount" was declared but never referenced
+..\Source\User\recognize.c(323): warning:  #177-D: variable "resultChar" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(322): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "delayCount" was declared but never referenced
+..\Source\User\recognize.c(323): warning:  #177-D: variable "resultChar" was declared but never referenced
+linking...
+Program Size: Code=12832 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\recognize.c
+格式化  ..\Source\User\recognize.c
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(320): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(320): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(320): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(320): warning:  #177-D: variable "delayCount" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "resultChar" was declared but never referenced
+linking...
+Program Size: Code=12828 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(320): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(320): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(320): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(320): warning:  #177-D: variable "delayCount" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "resultChar" was declared but never referenced
+linking...
+Program Size: Code=12828 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(321): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "delayCount" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "resultChar" was declared but never referenced
+linking...
+Program Size: Code=12844 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(321): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "delayCount" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "resultChar" was declared but never referenced
+linking...
+Program Size: Code=12840 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(321): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(321): warning:  #177-D: variable "delayCount" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "resultChar" was declared but never referenced
+linking...
+Program Size: Code=12840 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 6 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling recognize.c...
+..\Source\User\recognize.c(177): warning:  #940-D: missing return statement at end of non-void function "delayms"
+..\Source\User\recognize.c(322): warning:  #177-D: variable "time" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "b" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "resultNum" was declared but never referenced
+..\Source\User\recognize.c(322): warning:  #177-D: variable "delayCount" was declared but never referenced
+..\Source\User\recognize.c(323): warning:  #177-D: variable "resultChar" was declared but never referenced
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(364): error:  #65: expected a ";"
+..\Source\User\RecognizeCode.c(367): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(367): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(367): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(367): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12936 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(367): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(367): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(367): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(367): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(367): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(367): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(367): error:  #29: expected an expression
+..\Source\User\RecognizeCode.c(368): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(368): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(368): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(367): error:  #268: declaration may not appear after executable statement in block
+..\Source\User\RecognizeCode.c(368): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(368): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(368): error:  #29: expected an expression
+..\Source\User\RecognizeCode.c(367): warning:  #177-D: variable "temp" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(367): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(368): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(368): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(368): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=13032 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(367): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(367): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(367): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(367): error:  #18: expected a ")"
+..\Source\User\RecognizeCode.c(367): error:  #29: expected an expression
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=13032 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12864 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12900 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12908 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12944 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12912 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12896 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12896 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12896 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12896 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12928 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12936 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12940 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12928 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(224): warning:  #111-D: statement is unreachable
+..\Source\User\RecognizeCode.c(281): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(547): warning: At end of source:  #940-D: missing return statement at end of non-void function "getCharacter"
+..\Source\User\RecognizeCode.c(547): error: At end of source:  #67: expected a "}"
+Target not created
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(281): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12976 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(274): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12972 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(274): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12972 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(274): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(538): error:  #25: quoted string should contain at least one character
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(274): warning:  #174-D: expression has no effect
+linking...
+Program Size: Code=12972 RO-data=8264 RW-data=172 ZI-data=4412  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 3 Warning(s).
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(274): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(442): error:  #20: identifier "count" is undefined
+..\Source\User\RecognizeCode.c(447): error:  #20: identifier "count" is undefined
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(559): error: At end of source:  #67: expected a "}"
+..\Source\User\RecognizeCode.c(559): warning: At end of source:  #940-D: missing return statement at end of non-void function "getCharacter"
+..\Source\User\RecognizeCode.c(559): error: At end of source:  #67: expected a "}"
+Target not created
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(274): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(442): error:  #20: identifier "count" is undefined
+..\Source\User\RecognizeCode.c(447): error:  #20: identifier "count" is undefined
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(559): error: At end of source:  #67: expected a "}"
+..\Source\User\RecognizeCode.c(559): warning: At end of source:  #940-D: missing return statement at end of non-void function "getCharacter"
+..\Source\User\RecognizeCode.c(559): error: At end of source:  #67: expected a "}"
+Target not created
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(299): warning:  #940-D: missing return statement at end of non-void function "getCharacter"
+..\Source\User\RecognizeCode.c(197): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(304): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(351): warning:  #12-D: parsing restarts here after previous syntax error
+..\Source\User\RecognizeCode.c(352): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(411): warning:  #12-D: parsing restarts here after previous syntax error
+..\Source\User\RecognizeCode.c(412): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(557): warning:  #12-D: parsing restarts here after previous syntax error
+..\Source\User\RecognizeCode.c(558): error:  #169: expected a declaration
+..\Source\User\RecognizeCode.c(561): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(444): error:  #20: identifier "count" is undefined
+..\Source\User\RecognizeCode.c(449): error:  #20: identifier "count" is undefined
+..\Source\User\RecognizeCode.c(450): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(450): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(561): error: At end of source:  #67: expected a "}"
+..\Source\User\RecognizeCode.c(561): warning: At end of source:  #940-D: missing return statement at end of non-void function "getCharacter"
+..\Source\User\RecognizeCode.c(561): error: At end of source:  #67: expected a "}"
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(444): error:  #20: identifier "count" is undefined
+..\Source\User\RecognizeCode.c(449): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(449): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(450): error:  #20: identifier "count" is undefined
+..\Source\User\RecognizeCode.c(550): error: At end of source:  #67: expected a "}"
+..\Source\User\RecognizeCode.c(550): warning: At end of source:  #940-D: missing return statement at end of non-void function "getCharacter"
+..\Source\User\RecognizeCode.c(550): error: At end of source:  #67: expected a "}"
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(443): error:  #20: identifier "count" is undefined
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(449): error:  #20: identifier "count" is undefined
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(443): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+Target not created
+"D:\Program Files (x86)\keil4\AStyle\bin\AStyle.exe" -p ..\Source\User\RecognizeCode.c
+格式化  ..\Source\User\RecognizeCode.c
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(443): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(443): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(443): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(443): error:  #75: operand of "*" must be a pointer
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(448): error:  #142: expression must have pointer-to-object type
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(428): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(433): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(433): error:  #142: expression must have pointer-to-object type
+Target not created
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(185): warning:  #940-D: missing return statement at end of non-void function "getNum"
+..\Source\User\RecognizeCode.c(55): warning:  #177-D: variable "xPos" was declared but never referenced
+..\Source\User\RecognizeCode.c(276): warning:  #174-D: expression has no effect
+..\Source\User\RecognizeCode.c(428): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(434): error:  #142: expression must have pointer-to-object type
+..\Source\User\RecognizeCode.c(434): error:  #142: expression must have pointer-to-object type
+Target not created

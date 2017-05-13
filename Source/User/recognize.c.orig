@@ -32,7 +32,8 @@ double  conditionArr[10] = {
     0.000000000000019559505375681924000000000000000000000000000000
 };//条件概率
 double pSum = 0.00000000541642122744767280;
-char clearFlag = 0;
+char clearFlag = 1;
+char okFlag = 1;
 double pp[20];
 double anverage[10];
 /*********************************************************************************************************
@@ -105,7 +106,7 @@ void init_Color_Area(u16 x0, u16 y0, u16 color, u16 size) {
         y1 = y0 + size;
     }
     POINT_COLOR = color;
-    LCD_DrawRectangle(x0, y0, x1, y1);
+    LCD_DrawRectangle(x0, y0, x1, y1, color);
 
 }
 
@@ -166,13 +167,13 @@ void delay1ms(unsigned int delay1msdata)
 *   Parameter:    cnt:
 *   Return:         cnt:
 *******************************************************************************/
-int delayms(unsigned int delay1msdata,int delayms)
+int delayms(unsigned int delay1msdata, int delayms)
 {
     unsigned int i, j, k;
     for(i = 0; i < delay1msdata; i++)
         for(j = 0; j < 1000; j++)
             for(k = 0; k < 100; k++)
-   return delayms;             ;
+                return delayms;             ;
 }
 /*******************************************************************************
 *        function
@@ -201,7 +202,7 @@ u8 KEY_Scan(void)
 *   Parameter:    cnt:
 *   Return:         cnt:
 *******************************************************************************/
-void choose_Pen_Color() {
+void choose_Pen_Color(int flag) {
     if(Blue_Pen) {
         POINT_COLOR = Blue;
 
@@ -218,9 +219,27 @@ void choose_Pen_Color() {
         POINT_COLOR = Green;
     }
     if(Clear_Area) {
-        LCD_Clear_Area(White, 100, 0, 0, 100);
+        if(clearFlag == 1) {
+            LCD_Clear_Area(White, 238, 219, 1, 101);
+            clearFlag = 0;
+        }
 
-        clearFlag = 1;
+    }
+    if(OK_Area) {
+   if(point > 0 ) {
+		 int resultChar ;
+                if(flag == 0) {
+//                     resultNum = getNum(x, y, point);
+//                     printf("\n%d", resultNum);
+                    resultChar = getCharacter(x, y, point);
+                    printf("\n %c", resultChar);
+                    point = 0;
+                    LCD_Clear_Area(White, 219, 238, 1, 101);
+                    flag = 1;
+                }
+            }
+
+
     }
 
 }
@@ -300,10 +319,11 @@ int minArr(int a[200], int size) {
 *   Return:         cnt:
 *******************************************************************************/
 void touchMain() {
-    int flag = 1,time;
-    char result;
+    int flag = 1, time, b = 0, resultNum, delayCount = 0;
+    char resultChar;
     //获取点数point属于0~200
-    while(1) { //检测屏幕是否有操作
+
+    while(1) { 			//检测屏幕是否有操作
         if(key == 1) 															//KEY0按下,则执行校准程序
         {
             LCD_Clear(WHITE);											//清屏
@@ -311,34 +331,31 @@ void touchMain() {
             Save_Adjdata();
             load_Drow_Dialog();
         }
-        key =  KEY_Scan();
-        if(Pen_Point.Key_Sta == Key_Down)		//Touch screen is pressed
-        {   flag = 0;
-            Pen_Int_Set(0);									//Closed interrupt
-            do {
-                Convert_Pos();
-                Pen_Point.Key_Sta = Key_Up;
-                choose_Pen_Color();//初始化手写笔，初始化手写区域Pen_Int_Set(1);   //Open the interrupt
-                if(Touch_Area) {
-                    Draw_Big_Point(Pen_Point.X0, Pen_Point.Y0);
-                    getXY();					//获取屏幕的坐标点
-                }
-            } while(PEN == 0);
-            Pen_Int_Set(1);
-        }
-//////////////////////////////////////////////////
-        else///按键松开
+        choose_Pen_Color(flag);
+				key =  KEY_Scan();
+        
+				if(Pen_Point.Key_Sta == Key_Down)									//触摸屏被按下
         {
-          delay1ms(20);				//停笔延时
-            if(point > 0 ) {
-                if(flag == 0) {
-                    result = getCharacter(x,y,point);
-                    printf("\n %c", result);
-										point = 0;
-										LCD_Clear_Area(White, 100, 0, 0, 100);
-                    flag = 1;
-                }
+            flag = 0;
+            Pen_Int_Set(0);														//关闭中断
+            Convert_Pos();
+            
+            Pen_Point.Key_Sta = Key_Up;												//初始化手写笔，初始化手写区域
+            if(Touch_Area) {
+                Draw_Big_Point(Pen_Point.X0, Pen_Point.Y0);
+                getXY();															//获取屏幕的坐标点
+
             }
+            Pen_Int_Set(1);																		//开中断
+
+        }
+        else		///按键松开
+        {
+
+            delay1ms(20);				//停笔延时
+         
+
+
         }
 
     }
@@ -367,9 +384,10 @@ void initGUI() {
     LCD_ShowString(60, 50, "Adjust The LCD");		 //按rst键屏幕显示的文字
     Touch_Init();
     LCD_ShowStr(0, 0, "Pen Color:", Blue);
-    init_Color_Area_Diy(start_x0, start_y0, 16);	 //画颜色选择块
+    init_Color_Area_Diy(start_x0, start_y0, 25);	 //画颜色选择块
     LCD_ShowStr(0, 45 + 5, "Recognized Result:", Blue);
     LCD_ShowStr(80, 320 - 16, "Wrint Area", Red);
     LCD_ShowStr(180, 25, "Clear", Red);
- POINT_COLOR = Red;			LCD_DrawRectangle(0,100,239,319);	 //画手写区域
+    LCD_ShowStr(180, 60, "OK", Red);
+    LCD_DrawRectangle(0, 100, 239, 319, Red);	 //画手写区域
 }

@@ -64,8 +64,8 @@ int getNum(int x[200], int y[200], int point) {
     mX = minX  + deltaX / 2;
     mY = minY  + deltaY / 2;
 
-    xCount = getCount(start, end, mX, x);
-    yCount = getCount(start, end, mY, y);
+    xCount = getCount(start, end, mX, x);//xÖá½»µãÊý
+    yCount = getCount(start, end, mY, y);//yÖá½»µãÊý
     printf("\nxCount:%d,yCount:%d", xCount, yCount);
 
     if(xCount == 1 && yCount == 1) {
@@ -85,8 +85,6 @@ int getNum(int x[200], int y[200], int point) {
         else {
             return 7;
         }
-
-
     }
 ////////////////////ÅÐ¶Ï0£¬4////////////////////////////////////////////
     else if(xCount == 2 && yCount == 2) {
@@ -188,7 +186,7 @@ int getNum(int x[200], int y[200], int point) {
 
 
 /*******************************************************************************
-*        »ñÈ¡×ÖÄ¸
+*        »ñÈ¡Ð¡Ð´×ÖÄ¸
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -208,20 +206,18 @@ char getCharacter(int x[200], int y[200], int point) {
     mX = minX  + deltaX / 2;
     mY = minY  + deltaY / 2;
 
-    for(j = start; j < end; j++) {
-        if(hasIntersection(x, j, mX)) {
-            xCount++;
-        }
-        if(hasIntersection(y, j, mY)) {
+    xCount = getCount(start, end, mX, x);
 
-            yCount++;
-        }
-
-    }
+    yCount = getCount(start, end, mY, y);
     printf("\nxCount:%d,yCount:%d", xCount, yCount);
-
+    if(deltaX < deltaY / 5) {
+        return 'i';
+    }
 /////////////////////////////////		ÅÐ¶Ïj£¬L		///////////////////////////////////////////////////
     if(xCount == 1 && yCount == 1) {
+        if(deltaX < deltaY / 5) {
+            return 'i';
+        }
 
         for(j = start; j < end; j++) {
 
@@ -244,14 +240,67 @@ char getCharacter(int x[200], int y[200], int point) {
     }
     ////////////////////////		ÅÐ¶Ï£¬u,v,n,r	/////////////////////////////////////////////////////////////
     else if(xCount == 1 && yCount == 2) {
-        yPos = minY + deltaY * 5 / 6;
+        int xValue[5], count = 0, absX, i;
+        yPos = minY + deltaY * 3 / 4;
         yCount = getCount(start, end, yPos, y);
-        if(yCount == 1) {
 
+        for(j = start; j < end; j++) {
+            if(hasIntersection(y, j, yPos)) {
+
+                xValue[count]	= x[j]	;
+                count++;
+
+            }
+        }
+        absX = abs(xValue[0] - xValue[1]);
+        if(yCount == 1) {
             return 'r';
         }
+        else  if(count >= 2) {
+
+            if((float)absX / abs(minX - maxX) > 0.5) {
+                yPos = minY + deltaY * 1 / 4;
+                yCount = getCount(start, end, yPos, y);
+                if(yCount > 2) {
+                    return 'n';
+                }
+                else {
+                    return 'u';
+                }
+
+
+
+            }
+
+            else {
+                count == 0;
+                for(j = start; j < end; j++) {
+                    for(i = j + 1; i < end; i++) {
+                        if(x[j] == x[i]) {
+                            count++;
+                        }
+
+                    }
+                }
+                printf("\n%d", count);
+                if(count > 3) {
+                    return 'r';
+                }
+                else {
+                    return 'v';
+                }
+
+            }
+
+
+        }
+
     }
-    ///////////////ÅÐ¶Ï h,n/////////////////////////////////////////////////////////////////
+
+
+
+
+///////////////ÅÐ¶Ï h,n/////////////////////////////////////////////////////////////////
     else if(xCount == 1 && yCount == 3) {
         yPos = minY + deltaY * 2 / 7;
         yCount = getCount(start, end, yPos, y);
@@ -265,21 +314,20 @@ char getCharacter(int x[200], int y[200], int point) {
 
 
     }
-    ///////////////ÅÐ¶Ï w/////////////////////////////////////////////////////////////////
+///////////////ÅÐ¶Ï w/////////////////////////////////////////////////////////////////
     else if(xCount == 1 && yCount == 4) {
         return 'w';
     }
 
-    ///////////////ÅÐ¶Ïm/////////////////////////////////////////////////////////////////
+///////////////ÅÐ¶Ïm/////////////////////////////////////////////////////////////////
     else if(xCount == 1 && yCount == 5) {
         return 'm';
 
     }
 
 
-    ///////////////ÅÐ¶Ï		b,c,p,q		///////////////////////////////////////////////////////////////////////
+///////////////ÅÐ¶Ï		b,c,p,q	,t,d,t///////////////////////////////////////////////////////////////////////
     else if(xCount == 2 && yCount == 1) {
-        yCount = 0;
         yPos = minY + deltaY * 3 / 4;
         yCount = getCount(start, end, yPos, y);
         if(yCount > 1) {
@@ -302,7 +350,18 @@ char getCharacter(int x[200], int y[200], int point) {
         yPos = minY + deltaY * 1 / 4;
         yCount = getCount(start, end, yPos, y);
         if(yCount < 2) {
-            return 'c';
+            xPos = minX + deltaX * 1 / 4;
+            xCount = getCount(start, end, xPos, x);
+            if(xCount > 1) {
+                return 'c';
+            }
+            else {
+
+
+                return 'f';
+
+            }
+
         }
         else {
             yPos = minY + deltaY * 3 / 4;
@@ -322,13 +381,13 @@ char getCharacter(int x[200], int y[200], int point) {
                 return 'q';
             }
 
+
         }
 
     }
 
-    ///////////////ÅÐ¶Ï		o	,p,q		/////////////////////////////////////////////////////////////////
+///////////////ÅÐ¶Ï		o	,p,q		/////////////////////////////////////////////////////////////////
     else if(xCount == 2 && yCount == 2) {
-        int yPos, temp;
         yCount = 0;
         yPos = minY + deltaY * 3 / 4;
         yCount = getCount(start, end, yPos, y);
@@ -359,40 +418,91 @@ char getCharacter(int x[200], int y[200], int point) {
 
     }
 
-    ///////////////ÅÐ¶Ï		b,d,x,		/////////////////////////////////////////////////////////////////
+///////////////ÅÐ¶Ï		a,b,d,x,		/////////////////////////////////////////////////////////////////
     else if(xCount == 2 && yCount == 3) {
+        int absX, xValue, count = 0,
+                          yPos = minY + deltaY / 4;
+        yCount = getCount(start, end, yPos, y);
+			   for(j = start; j < end; j++) {
+                if(hasIntersection(y, j, yPos)) {
+                    xValue[count]	= x[j];
+                    count++;
+
+                }
+            }
+						//////////TODO
+            absX = abs(xValue[0] - xValue[1]);
+        if(yCount == 1) {
+            for(j = start; j < end; j++) {
+                if(hasIntersection(y, j, yPos)) {
+                    temp = x[j];
+                }
+
+            }
+            if(temp > mX) {
+                return 'd';
+
+            }
+            return 'b';
+        }
+
+        else if(yCount == 3) {
+         
+            if(count >= 2) {
+
+                if((float)absX / abs(minX - maxX) > 0.5) {
+                    return 'a';
+
+                }
+                else {
+                    return 'x';
+                }
 
 
 
-
-
+            }
+        }
     }
 
-    ///////////////ÅÐ¶Ï		d,		/////////////////////////////////////////////////////////////////
+///////////////ÅÐ¶Ï		d,		/////////////////////////////////////////////////////////////////
     else if(xCount == 2 && yCount == 4) {
         return 'd';
 
 
     }
-    ///////////////ÅÐ¶Ï	g,z,s			/////////////////////////////////////////////////////////////////
+///////////////ÅÐ¶Ï	g,z,s	,t		/////////////////////////////////////////////////////////////////
     else if(xCount == 3 && yCount == 1) {
-
-        yCount = 0;
         yPos = minY + deltaY * 1 / 4;
         yCount = getCount(start, end, yPos, y);
         if(yCount > 1) {
-            return 'g';
+            yPos = minY + deltaY * 3 / 4;
+            yCount = getCount(start, end, yPos, y);
+            for(j = start; j < end; j++) {
+                if(hasIntersection(y, j, mY)) {
+                    temp = x[j];
+
+                }
+
+
+            }
+            if(temp > mX) {
+                return 'g';
+
+            }
+            else {
+                return 't';
+            }
 
         }
         else {
             yPos = minY + deltaY * 3 / 4;
-            yCount = getCount(start, end, yPos, y);
+            xPos = minX + deltaX * 1 / 4;
 
-            for(j = start; j < end; j++) {
-                if(hasIntersection(y, j, yPos)) {
-                    temp = x[j];
+            xCount = getCount(start, end, xPos, x);
 
-                }
+
+            if(xCount == 1) {
+                return 't';
             }
             if(temp < mX) {
                 return 'z';
@@ -401,10 +511,11 @@ char getCharacter(int x[200], int y[200], int point) {
                 return 's';
             }
 
+
         }
     }
 
-    ///////////////ÅÐ¶Ï		e,y		/////////////////////////////////////////////////////////////////
+///////////////ÅÐ¶Ï		e,y		/////////////////////////////////////////////////////////////////
     else if(xCount == 3 && yCount == 2) {
         xCount = 0;
         xPos = minX + deltaY * 3 / 4;
@@ -425,19 +536,19 @@ char getCharacter(int x[200], int y[200], int point) {
 
     }
 
-    ///////////////ÅÐ¶Ï	k			/////////////////////////////////////////////////////////////////
+///////////////ÅÐ¶Ï	k			/////////////////////////////////////////////////////////////////
     else if(xCount == 3 && yCount == 3) {
 
         return 'k';
 
     }
-    ///////////////ÅÐ¶Ï	g			/////////////////////////////////////////////////////////////////
+///////////////ÅÐ¶Ï	g			/////////////////////////////////////////////////////////////////
     else if(xCount == 4 && yCount == 2) {
         return 'g';
     }
 
 
-    return 255;
+    return ' ';
 }
 
 

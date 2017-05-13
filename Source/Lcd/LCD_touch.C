@@ -334,6 +334,22 @@ void Convert_Pos(void)
 }
 /*
 *********************************************************************************************************
+* Description: 	Getting the value of coordinate function.
+* Arguments  : 	None
+* Returns    : 	None
+*********************************************************************************************************
+*/
+void gerPos(void)
+{		 	  
+	if(Read_ADS2(&Pen_Point.X,&Pen_Point.Y))
+	{
+		Pen_Point.X0=Pen_Point.xfac*Pen_Point.X+Pen_Point.xoff;
+		Pen_Point.Y0=Pen_Point.yfac*Pen_Point.Y+Pen_Point.yoff;  
+ 
+	}
+}
+/*
+*********************************************************************************************************
 * Description: 	Touch screen External interrupt initialize function.
 * Arguments  : 	None
 * Returns    : 	None

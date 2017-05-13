@@ -15,7 +15,7 @@
 #define Green_Pen Pen_Point.X0>79+2&&Pen_Point.X0<81+25&&Pen_Point.Y0>20&&Pen_Point.Y0<45
 #define Touch_Area Pen_Point.Y0>=100&&Pen_Point.X0>0
 #define Clear_Area Pen_Point.X0>180&&Pen_Point.X0<240&&Pen_Point.Y0>20&&Pen_Point.Y0<45
-
+#define OK_Area Pen_Point.X0>180&&Pen_Point.X0<240&&Pen_Point.Y0>60&&Pen_Point.Y0<80
 /**********************************
 ****************变量定义***********
 ************************************/
