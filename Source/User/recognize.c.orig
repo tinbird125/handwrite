@@ -18,24 +18,10 @@ u16 start_y0 = 20 ; //举行起点y坐眣0=20
 int point = 0;
 int x[200];
 int  y[200];
-int future[20][25];//特征值
-double  conditionArr[10] = {
-    0.000000000000000845939275201984320000000000000000000000000000,
-    0.000000000000000000000000000000950620196327242240000000000000,
-    0.000000000000000076703947087176432000000000000000000000000000,
-    0.000000000000014768066640829700000000000000000000000000000000,
-    0.000000000000000000000000922291546853083200000000000000000000,
-    0.000000000000000617218701186411760000000000000000000000000000,
-    0.000000000000663492179444729200000000000000000000000000000000,
-    0.000000000000000000000205333945952220680000000000000000000000,
-    0.000000054163512914863128000000000000000000000000000000000000,
-    0.000000000000019559505375681924000000000000000000000000000000
-};//条件概率
-double pSum = 0.00000000541642122744767280;
 char clearFlag = 1;
 char okFlag = 1;
-double pp[20];
-double anverage[10];
+int8_t byte, a;
+uint8_t buffer[];
 /*********************************************************************************************************
 ** Function name:       Delay
 ** Descriptions:        软件延时
@@ -43,8 +29,6 @@ double anverage[10];
 ** output parameters:   无
 ** Returned value:      无
 *********************************************************************************************************/
-int8_t byte, a;
-uint8_t buffer[];
 void DelayUart (uint32_t Time)
 {
     uint32_t i;
@@ -56,7 +40,7 @@ void DelayUart (uint32_t Time)
 }
 
 /*****************************************************************************
-**   Main Function  main()
+**   串口初始化函数
 ******************************************************************************/
 void uart(void)
 {
@@ -65,7 +49,7 @@ void uart(void)
 
 }
 /*******************************************************************************
-*        function
+*        显示有颜色的字符
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -90,7 +74,7 @@ void LCD_ShowStr(u8 x, u16 y, const u8 *p, u16 color) {
     }
 }
 /*******************************************************************************
-*        function
+*        画颜色选择区域的矩形
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -111,7 +95,7 @@ void init_Color_Area(u16 x0, u16 y0, u16 color, u16 size) {
 }
 
 /*******************************************************************************
-*        function
+*        初始化颜色选择区域
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -129,7 +113,7 @@ void init_Color_Area_Diy(u16 start_x0, u16 start_y0, u16 size) {
 }
 
 /*******************************************************************************
-*        function
+*        
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -144,7 +128,7 @@ void load_Drow_Dialog(void)
     POINT_COLOR = Blue;						//Setting brush color
 }
 /*******************************************************************************
-*        function
+*        延时函数
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -176,7 +160,7 @@ int delayms(unsigned int delay1msdata, int delayms)
                 return delayms;             ;
 }
 /*******************************************************************************
-*        function
+*        按键扫描
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -219,32 +203,32 @@ void choose_Pen_Color(int flag) {
         POINT_COLOR = Green;
     }
     if(Clear_Area) {
-        if(clearFlag == 1) {
-            LCD_Clear_Area(White, 238, 219, 1, 101);
-            clearFlag = 0;
-        }
-
+        LCD_Clear_Area(White, 238, 219, 1, 101);
+        clearFlag = 0;
+        point = 0;
     }
+    //识别
     if(OK_Area) {
-   if(point > 0 ) {
-		 int resultChar ;
-                if(flag == 0) {
+        if(point > 0 ) {
+            int resultChar ;
+            if(flag == 0) {
 //                     resultNum = getNum(x, y, point);
 //                     printf("\n%d", resultNum);
-                    resultChar = getCharacter(x, y, point);
-                    printf("\n %c", resultChar);
-                    point = 0;
-                    LCD_Clear_Area(White, 219, 238, 1, 101);
-                    flag = 1;
-                }
+                resultChar = getUperCase(x, y, point);
+                printf("\nResult:%c", resultChar);
+                LCD_ShowChar(0, 70, resultChar, 16, 0);
+                point = 0;
+                LCD_Clear_Area(White, 219, 238, 1, 101);
+                flag = 1;
             }
+        }
 
 
     }
 
 }
 /*******************************************************************************
-*        function
+*        获取x，y坐标
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -270,7 +254,7 @@ void getXY(void) {
     }
 }
 /*******************************************************************************
-*        function
+*        求数组的最大值
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -289,7 +273,7 @@ int maxArr(int a[200], int size) {
     return max;
 }
 /*******************************************************************************
-*        function
+*        求数组最小值
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -305,13 +289,12 @@ int minArr(int a[200], int size) {
         }
     }
     return min;
-
 }
 
 
 
 /*******************************************************************************
-*        function
+*        主函数
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -331,30 +314,31 @@ void touchMain() {
             Save_Adjdata();
             load_Drow_Dialog();
         }
+				
         choose_Pen_Color(flag);
-				key =  KEY_Scan();
-        
-				if(Pen_Point.Key_Sta == Key_Down)									//触摸屏被按下
+				
+        key =  KEY_Scan();
+        if(Pen_Point.Key_Sta == Key_Down)									//触摸屏被按下
         {
+						
             flag = 0;
             Pen_Int_Set(0);														//关闭中断
             Convert_Pos();
-            
+
             Pen_Point.Key_Sta = Key_Up;												//初始化手写笔，初始化手写区域
             if(Touch_Area) {
                 Draw_Big_Point(Pen_Point.X0, Pen_Point.Y0);
-                getXY();															//获取屏幕的坐标点
+								
+							
+									
+							getXY();															//获取屏幕的坐标点
 
             }
             Pen_Int_Set(1);																		//开中断
-
         }
         else		///按键松开
-        {
-
+        {point-4;//去噪
             delay1ms(20);				//停笔延时
-         
-
 
         }
 
@@ -363,7 +347,7 @@ void touchMain() {
 
 
 /*******************************************************************************
-*        function
+*        屏显初始化函数
 *   name:
 *   Parameter:    cnt:
 *   Parameter:    cnt:
@@ -371,12 +355,10 @@ void touchMain() {
 *   Return:         cnt:
 *******************************************************************************/
 void initGUI() {
-
-    uart();
     SystemInit();
     EINTInit();   	//Touch screen External interrupt initialize function.
     LCD_Init();
-
+	
     /*GPIO Configuration*/
     LPC_GPIO0->FIODIR |= 0x00002C0;  		//P0.6 0.7 0.9 Output
     LPC_GPIO2->FIODIR |= 0x00000FF;  	//P2.13 input P2.0...P2.7 Output
@@ -390,4 +372,5 @@ void initGUI() {
     LCD_ShowStr(180, 25, "Clear", Red);
     LCD_ShowStr(180, 60, "OK", Red);
     LCD_DrawRectangle(0, 100, 239, 319, Red);	 //画手写区域
+		uart();
 }

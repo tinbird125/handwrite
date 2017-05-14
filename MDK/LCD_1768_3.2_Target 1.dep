@@ -15,7 +15,7 @@ I (..\Source\I2C\I2C.H)(0x4D13069A)
 I (..\Source\User\recognize.h)(0x59170264)
 I (..\Source\User\uart.h)(0x59044A3C)
 I (C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
-F (..\Source\Lcd\Lcd.c)(0x5916A4AF)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil_v5\ARM\RV31\INC -I C:\Keil_v5\ARM\CMSIS\Include -I C:\Keil_v5\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\lcd.o" --omf_browse ".\Obj\lcd.crf" --depend ".\Obj\lcd.d")
+F (..\Source\Lcd\Lcd.c)(0x5918507D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil_v5\ARM\RV31\INC -I C:\Keil_v5\ARM\CMSIS\Include -I C:\Keil_v5\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\lcd.o" --omf_browse ".\Obj\lcd.crf" --depend ".\Obj\lcd.d")
 I (C:\Keil_v5\ARM\Inc\NXP\LPC17xx\lpc17xx.h)(0x4FF500CC)
 I (C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h)(0x50062982)
 I (C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
@@ -48,7 +48,7 @@ I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
 I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
 I (C:\Keil_v5\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x4F583772)
 I (..\Source\I2C\i2c.h)(0x4D13069A)
-F (..\Source\User\recognize.c)(0x591709B8)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil_v5\ARM\RV31\INC -I C:\Keil_v5\ARM\CMSIS\Include -I C:\Keil_v5\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognize.o" --omf_browse ".\Obj\recognize.crf" --depend ".\Obj\recognize.d")
+F (..\Source\User\recognize.c)(0x591850A0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil_v5\ARM\RV31\INC -I C:\Keil_v5\ARM\CMSIS\Include -I C:\Keil_v5\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognize.o" --omf_browse ".\Obj\recognize.crf" --depend ".\Obj\recognize.d")
 I (..\Source\Lcd\sys.h)(0x4D130B96)
 I (..\Source\User\recognize.h)(0x59170264)
 I (..\Source\Lcd\lcd.h)(0x5916A434)
@@ -64,8 +64,8 @@ I (C:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h)(0x4EB0D284)
 I (C:\Keil_v5\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
 I (..\Source\User\uart.h)(0x59044A3C)
 I (C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
-I (..\Source\User\RecognizeCode.h)(0x59169E76)
-F (..\Source\User\RecognizeCode.c)(0x5917174D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil_v5\ARM\RV31\INC -I C:\Keil_v5\ARM\CMSIS\Include -I C:\Keil_v5\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognizecode.o" --omf_browse ".\Obj\recognizecode.crf" --depend ".\Obj\recognizecode.d")
+I (..\Source\User\RecognizeCode.h)(0x5917BD3B)
+F (..\Source\User\RecognizeCode.c)(0x59185348)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil_v5\ARM\RV31\INC -I C:\Keil_v5\ARM\CMSIS\Include -I C:\Keil_v5\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognizecode.o" --omf_browse ".\Obj\recognizecode.crf" --depend ".\Obj\recognizecode.d")
 I (..\Source\Lcd\sys.h)(0x4D130B96)
 I (..\Source\User\recognize.h)(0x59170264)
 I (..\Source\Lcd\lcd.h)(0x5916A434)
@@ -81,7 +81,7 @@ I (C:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h)(0x4EB0D284)
 I (C:\Keil_v5\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
 I (..\Source\User\uart.h)(0x59044A3C)
 I (C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
-I (..\Source\User\RecognizeCode.h)(0x59169E76)
+I (..\Source\User\RecognizeCode.h)(0x5917BD3B)
 F (..\Source\User\uart.c)(0x59043BF5)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil_v5\ARM\RV31\INC -I C:\Keil_v5\ARM\CMSIS\Include -I C:\Keil_v5\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\uart.o" --omf_browse ".\Obj\uart.crf" --depend ".\Obj\uart.d")
 I (C:\Keil_v5\ARM\Inc\NXP\LPC17xx\lpc17xx.h)(0x4FF500CC)
 I (C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h)(0x50062982)

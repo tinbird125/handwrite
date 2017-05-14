@@ -289,10 +289,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>54</ColumnNumber>
+      <ColumnNumber>9</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>960</TopLine>
-      <CurrentLine>969</CurrentLine>
+      <TopLine>1045</TopLine>
+      <CurrentLine>1056</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Source\Lcd\Lcd.c</PathWithFileName>
       <FilenameWithoutPath>Lcd.c</FilenameWithoutPath>
@@ -377,10 +377,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>33</ColumnNumber>
+      <ColumnNumber>9</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>218</TopLine>
-      <CurrentLine>233</CurrentLine>
+      <TopLine>161</TopLine>
+      <CurrentLine>172</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Source\User\recognize.c</PathWithFileName>
       <FilenameWithoutPath>recognize.c</FilenameWithoutPath>
@@ -393,10 +393,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>26</ColumnNumber>
+      <ColumnNumber>6</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>418</TopLine>
-      <CurrentLine>433</CurrentLine>
+      <TopLine>201</TopLine>
+      <CurrentLine>218</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Source\User\RecognizeCode.c</PathWithFileName>
       <FilenameWithoutPath>RecognizeCode.c</FilenameWithoutPath>
