@@ -213,7 +213,7 @@ void choosePenColor(int flag) {
             int resultChar, resultNum ;
             if(flag == 0) {
 						
-				
+						
                 if(mode == 0) {
                     resultNum = getNum(x, y, point);
                     printf("\n%d", resultNum);
@@ -333,6 +333,7 @@ void touchMain() {
 
         choosePenColor(flag);
         if(!(LPC_GPIO2->FIOPIN & (0X01 << 11))) {
+					POINT_COLOR=Red;
             mode++;
 
             if(mode > 3) {
@@ -402,7 +403,7 @@ void initGUI() {
     LCD_ShowStr(0, 0, "Pen Color:", Blue);
     init_Color_Area_Diy(start_x0, start_y0, 25);	 //画颜色选择块
     LCD_ShowStr(0,60, "Result:", Blue);
-    LCD_ShowStr(80, 320 - 16, "Wrint Area", Red);
+    LCD_ShowStr(70, 320 - 16, "Wrinting Area", Red);
     LCD_ShowStr(180, 25, "Clear", Red);
     LCD_ShowStr(180, 60, "OK", Red);
     LCD_DrawRectangle(0, 120, 239, 319, Red);	 //画手写区域

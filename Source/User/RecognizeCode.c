@@ -18,7 +18,7 @@
 *   Parameter:    cnt:
 *   Return:         cnt:
 *******************************************************************************/
-int arrLength;
+int arrLength;//记录画下的点数
 int hasIntersection(int a[200], int j, int pos) {
 
     if(a[j] >= pos && a[j + 1] < pos || a[j] < pos && a[j + 1] >= pos) {
@@ -130,8 +130,8 @@ int getNum(int x[200], int y[200], int point) {
     mX = minX  + deltaX / 2;
     mY = minY  + deltaY / 2;
 
-    xCount = getCount(start, end, mX, x);//x轴交点数
-    yCount = getCount(start, end, mY, y);//y轴交点数
+    xCount = getCount(start, end, mX, x);//中线mX交点数
+    yCount = getCount(start, end, mY, y);//中线轴交点数
     printf("\nxCount:%d,yCount:%d", xCount, yCount);
 
     if(xCount == 1 && yCount == 1) {
@@ -384,14 +384,14 @@ char getLowerCase(int x[200], int y[200], int point) {
 ///////////////判断 w/////////////////////////////////////////////////////////////////
     else if(xCount == 1 && yCount == 4) {
         if(y[0] < mY) {
-            return 'W';
+            return 'w';
         }
-        return 'M';
+        return 'm';
     }
 
 ///////////////判断m/////////////////////////////////////////////////////////////////
     else if(xCount == 1 && yCount == 5) {
-        return 'm';
+        return 'w';
 
     }
 
@@ -709,8 +709,6 @@ char getUperCase(int x[200], int y[200], int point) {
             return 'W';
         }
         return 'M';
-
-
     }
 
     //////////////////判断C,F,I,J,P,Z////////////////////////////////////

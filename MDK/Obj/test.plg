@@ -1,0 +1,20 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\YY\Desktop\ÊÖÐ´Ê¶±ð\handwrite\MDK\LCD_1768_3.2.uvproj
+Project File Date:  05/15/2017
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling RecognizeCode.c...
+..\Source\User\RecognizeCode.c(25): warning:  #223-D: function "getDelta" declared implicitly
+..\Source\User\RecognizeCode.c(42): warning:  #940-D: missing return statement at end of non-void function "getTemp"
+..\Source\User\RecognizeCode.c(110): warning:  #940-D: missing return statement at end of non-void function "getDis"
+..\Source\User\RecognizeCode.c(276): warning:  #117-D: non-void function "getNum" should return a value
+..\Source\User\RecognizeCode.c(617): warning:  #550-D: variable "dis" was set but never used
+linking...
+Program Size: Code=15868 RO-data=8264 RW-data=84 ZI-data=2172  
+FromELF: creating hex file...
+".\Obj\test.axf" - 0 Error(s), 5 Warning(s).
