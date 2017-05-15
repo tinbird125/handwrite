@@ -20,7 +20,7 @@
 ### ADS-LD Output File: '.\Obj\test.axf'
 ### ADS-LD Command File: '.\Obj\test.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\Obj\test.lnp', Handle=0x00000B24
+### Creating CmdFile '.\Obj\test.lnp', Handle=0x00000BB0
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\Obj\test.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

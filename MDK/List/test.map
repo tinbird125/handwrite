@@ -224,9 +224,9 @@ Section Cross References
     recognize.o(i.touchMain) refers to lcd_touch.o(i.Save_Adjdata) for Save_Adjdata
     recognize.o(i.touchMain) refers to recognize.o(i.load_Drow_Dialog) for load_Drow_Dialog
     recognize.o(i.touchMain) refers to recognize.o(i.choosePenColor) for choosePenColor
+    recognize.o(i.touchMain) refers to lcd.o(i.LCD_Clear_Area) for LCD_Clear_Area
     recognize.o(i.touchMain) refers to lcd.o(i.LCD_ShowString) for LCD_ShowString
     recognize.o(i.touchMain) refers to recognize.o(i.delay1ms) for delay1ms
-    recognize.o(i.touchMain) refers to lcd.o(i.LCD_Clear_Area) for LCD_Clear_Area
     recognize.o(i.touchMain) refers to recognize.o(i.KEY_Scan) for KEY_Scan
     recognize.o(i.touchMain) refers to lcd_touch.o(i.Pen_Int_Set) for Pen_Int_Set
     recognize.o(i.touchMain) refers to lcd_touch.o(i.Convert_Pos) for Convert_Pos
@@ -810,55 +810,55 @@ Image Symbol Table
     i._printf_core                           0x00002374   Section        0  printf3.o(i._printf_core)
     _printf_core                             0x00002375   Thumb Code   436  printf3.o(i._printf_core)
     i.choosePenColor                         0x0000252c   Section        0  recognize.o(i.choosePenColor)
-    i.delay                                  0x00002734   Section        0  lcd.o(i.delay)
-    delay                                    0x00002735   Thumb Code    14  lcd.o(i.delay)
-    i.delay1ms                               0x00002742   Section        0  recognize.o(i.delay1ms)
-    i.delay_ms                               0x00002766   Section        0  lcd_touch.o(i.delay_ms)
-    i.delay_us                               0x0000277c   Section        0  lcd_touch.o(i.delay_us)
-    i.fputc                                  0x00002788   Section        0  retarget.o(i.fputc)
-    i.getCount                               0x00002796   Section        0  recognizecode.o(i.getCount)
-    i.getDelta                               0x000027c6   Section        0  recognizecode.o(i.getDelta)
-    i.getDis                                 0x000027ec   Section        0  recognizecode.o(i.getDis)
-    i.getLowerCase                           0x0000284c   Section        0  recognizecode.o(i.getLowerCase)
-    i.getNum                                 0x00002d70   Section        0  recognizecode.o(i.getNum)
-    i.getTemp                                0x00003068   Section        0  recognizecode.o(i.getTemp)
-    i.getUperCase                            0x0000309c   Section        0  recognizecode.o(i.getUperCase)
-    i.getXY                                  0x0000363c   Section        0  recognize.o(i.getXY)
-    i.hasIntersection                        0x000036d4   Section        0  recognizecode.o(i.hasIntersection)
-    i.initGUI                                0x0000373c   Section        0  recognize.o(i.initGUI)
-    i.init_Color_Area                        0x0000385c   Section        0  recognize.o(i.init_Color_Area)
-    i.init_Color_Area_Diy                    0x0000389c   Section        0  recognize.o(i.init_Color_Area_Diy)
-    i.lcd_send                               0x000038ec   Section        0  lcd.o(i.lcd_send)
-    lcd_send                                 0x000038ed   Thumb Code    56  lcd.o(i.lcd_send)
-    i.load_Drow_Dialog                       0x00003928   Section        0  recognize.o(i.load_Drow_Dialog)
-    i.main                                   0x00003954   Section        0  main.o(i.main)
-    i.maxArr                                 0x00003962   Section        0  recognize.o(i.maxArr)
-    i.minArr                                 0x00003982   Section        0  recognize.o(i.minArr)
-    i.mypow                                  0x000039a2   Section        0  lcd.o(i.mypow)
-    i.rd_dat                                 0x000039b8   Section        0  lcd.o(i.rd_dat)
-    rd_dat                                   0x000039b9   Thumb Code    98  lcd.o(i.rd_dat)
-    i.rd_reg                                 0x00003a20   Section        0  lcd.o(i.rd_reg)
-    rd_reg                                   0x00003a21   Thumb Code    38  lcd.o(i.rd_reg)
-    i.sendchar                               0x00003a4c   Section        0  uart.o(i.sendchar)
-    i.sqrt                                   0x00003a5a   Section        0  sqrt.o(i.sqrt)
-    i.touchMain                              0x00003aa8   Section        0  recognize.o(i.touchMain)
-    i.uart                                   0x00003bd0   Section        0  recognize.o(i.uart)
-    i.uart0_set_divisors                     0x00003be4   Section        0  uart.o(i.uart0_set_divisors)
-    i.uart2_set_divisors                     0x00003cd4   Section        0  uart.o(i.uart2_set_divisors)
-    i.wait_delay                             0x00003dc4   Section        0  lcd.o(i.wait_delay)
-    i.wr_cmd                                 0x00003dd0   Section        0  lcd.o(i.wr_cmd)
-    wr_cmd                                   0x00003dd1   Thumb Code    44  lcd.o(i.wr_cmd)
-    i.wr_dat                                 0x00003e00   Section        0  lcd.o(i.wr_dat)
-    wr_dat                                   0x00003e01   Thumb Code    44  lcd.o(i.wr_dat)
-    i.wr_dat_only                            0x00003e30   Section        0  lcd.o(i.wr_dat_only)
-    wr_dat_only                              0x00003e31   Thumb Code    32  lcd.o(i.wr_dat_only)
-    i.wr_dat_start                           0x00003e54   Section        0  lcd.o(i.wr_dat_start)
-    wr_dat_start                             0x00003e55   Thumb Code    10  lcd.o(i.wr_dat_start)
-    i.wr_dat_stop                            0x00003e64   Section        0  lcd.o(i.wr_dat_stop)
-    wr_dat_stop                              0x00003e65   Thumb Code    10  lcd.o(i.wr_dat_stop)
-    i.wr_reg                                 0x00003e74   Section        0  lcd.o(i.wr_reg)
-    wr_reg                                   0x00003e75   Thumb Code    36  lcd.o(i.wr_reg)
-    .constdata                               0x00003e9c   Section     8036  lcd.o(.constdata)
+    i.delay                                  0x00002738   Section        0  lcd.o(i.delay)
+    delay                                    0x00002739   Thumb Code    14  lcd.o(i.delay)
+    i.delay1ms                               0x00002746   Section        0  recognize.o(i.delay1ms)
+    i.delay_ms                               0x0000276a   Section        0  lcd_touch.o(i.delay_ms)
+    i.delay_us                               0x00002780   Section        0  lcd_touch.o(i.delay_us)
+    i.fputc                                  0x0000278c   Section        0  retarget.o(i.fputc)
+    i.getCount                               0x0000279a   Section        0  recognizecode.o(i.getCount)
+    i.getDelta                               0x000027ca   Section        0  recognizecode.o(i.getDelta)
+    i.getDis                                 0x000027f0   Section        0  recognizecode.o(i.getDis)
+    i.getLowerCase                           0x00002850   Section        0  recognizecode.o(i.getLowerCase)
+    i.getNum                                 0x00002d78   Section        0  recognizecode.o(i.getNum)
+    i.getTemp                                0x00003070   Section        0  recognizecode.o(i.getTemp)
+    i.getUperCase                            0x000030a4   Section        0  recognizecode.o(i.getUperCase)
+    i.getXY                                  0x00003644   Section        0  recognize.o(i.getXY)
+    i.hasIntersection                        0x000036dc   Section        0  recognizecode.o(i.hasIntersection)
+    i.initGUI                                0x00003744   Section        0  recognize.o(i.initGUI)
+    i.init_Color_Area                        0x00003864   Section        0  recognize.o(i.init_Color_Area)
+    i.init_Color_Area_Diy                    0x000038a4   Section        0  recognize.o(i.init_Color_Area_Diy)
+    i.lcd_send                               0x000038f4   Section        0  lcd.o(i.lcd_send)
+    lcd_send                                 0x000038f5   Thumb Code    56  lcd.o(i.lcd_send)
+    i.load_Drow_Dialog                       0x00003930   Section        0  recognize.o(i.load_Drow_Dialog)
+    i.main                                   0x0000395c   Section        0  main.o(i.main)
+    i.maxArr                                 0x0000396a   Section        0  recognize.o(i.maxArr)
+    i.minArr                                 0x0000398a   Section        0  recognize.o(i.minArr)
+    i.mypow                                  0x000039aa   Section        0  lcd.o(i.mypow)
+    i.rd_dat                                 0x000039c0   Section        0  lcd.o(i.rd_dat)
+    rd_dat                                   0x000039c1   Thumb Code    98  lcd.o(i.rd_dat)
+    i.rd_reg                                 0x00003a28   Section        0  lcd.o(i.rd_reg)
+    rd_reg                                   0x00003a29   Thumb Code    38  lcd.o(i.rd_reg)
+    i.sendchar                               0x00003a54   Section        0  uart.o(i.sendchar)
+    i.sqrt                                   0x00003a62   Section        0  sqrt.o(i.sqrt)
+    i.touchMain                              0x00003ab0   Section        0  recognize.o(i.touchMain)
+    i.uart                                   0x00003bd8   Section        0  recognize.o(i.uart)
+    i.uart0_set_divisors                     0x00003bec   Section        0  uart.o(i.uart0_set_divisors)
+    i.uart2_set_divisors                     0x00003cdc   Section        0  uart.o(i.uart2_set_divisors)
+    i.wait_delay                             0x00003dcc   Section        0  lcd.o(i.wait_delay)
+    i.wr_cmd                                 0x00003dd8   Section        0  lcd.o(i.wr_cmd)
+    wr_cmd                                   0x00003dd9   Thumb Code    44  lcd.o(i.wr_cmd)
+    i.wr_dat                                 0x00003e08   Section        0  lcd.o(i.wr_dat)
+    wr_dat                                   0x00003e09   Thumb Code    44  lcd.o(i.wr_dat)
+    i.wr_dat_only                            0x00003e38   Section        0  lcd.o(i.wr_dat_only)
+    wr_dat_only                              0x00003e39   Thumb Code    32  lcd.o(i.wr_dat_only)
+    i.wr_dat_start                           0x00003e5c   Section        0  lcd.o(i.wr_dat_start)
+    wr_dat_start                             0x00003e5d   Thumb Code    10  lcd.o(i.wr_dat_start)
+    i.wr_dat_stop                            0x00003e6c   Section        0  lcd.o(i.wr_dat_stop)
+    wr_dat_stop                              0x00003e6d   Thumb Code    10  lcd.o(i.wr_dat_stop)
+    i.wr_reg                                 0x00003e7c   Section        0  lcd.o(i.wr_reg)
+    wr_reg                                   0x00003e7d   Thumb Code    36  lcd.o(i.wr_reg)
+    .constdata                               0x00003ea4   Section     8036  lcd.o(.constdata)
     .data                                    0x10000000   Section       10  lcd.o(.data)
     TextColor                                0x10000004   Data           2  lcd.o(.data)
     BackColor                                0x10000006   Data           2  lcd.o(.data)
@@ -1057,40 +1057,40 @@ Image Symbol Table
     __scatterload_copy                       0x0000234d   Thumb Code    14  handlers.o(i.__scatterload_copy)
     __scatterload_zeroinit                   0x0000235b   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
     __set_errno                              0x00002369   Thumb Code     6  errno.o(i.__set_errno)
-    choosePenColor                           0x0000252d   Thumb Code   474  recognize.o(i.choosePenColor)
-    delay1ms                                 0x00002743   Thumb Code    36  recognize.o(i.delay1ms)
-    delay_ms                                 0x00002767   Thumb Code    22  lcd_touch.o(i.delay_ms)
-    delay_us                                 0x0000277d   Thumb Code    12  lcd_touch.o(i.delay_us)
-    fputc                                    0x00002789   Thumb Code    14  retarget.o(i.fputc)
-    getCount                                 0x00002797   Thumb Code    48  recognizecode.o(i.getCount)
-    getDelta                                 0x000027c7   Thumb Code    38  recognizecode.o(i.getDelta)
-    getDis                                   0x000027ed   Thumb Code    96  recognizecode.o(i.getDis)
-    getLowerCase                             0x0000284d   Thumb Code  1314  recognizecode.o(i.getLowerCase)
-    getNum                                   0x00002d71   Thumb Code   730  recognizecode.o(i.getNum)
-    getTemp                                  0x00003069   Thumb Code    52  recognizecode.o(i.getTemp)
-    getUperCase                              0x0000309d   Thumb Code  1438  recognizecode.o(i.getUperCase)
-    getXY                                    0x0000363d   Thumb Code   134  recognize.o(i.getXY)
-    hasIntersection                          0x000036d5   Thumb Code    98  recognizecode.o(i.hasIntersection)
-    initGUI                                  0x0000373d   Thumb Code   194  recognize.o(i.initGUI)
-    init_Color_Area                          0x0000385d   Thumb Code    60  recognize.o(i.init_Color_Area)
-    init_Color_Area_Diy                      0x0000389d   Thumb Code    80  recognize.o(i.init_Color_Area_Diy)
-    load_Drow_Dialog                         0x00003929   Thumb Code    34  recognize.o(i.load_Drow_Dialog)
-    main                                     0x00003955   Thumb Code    14  main.o(i.main)
-    maxArr                                   0x00003963   Thumb Code    32  recognize.o(i.maxArr)
-    minArr                                   0x00003983   Thumb Code    32  recognize.o(i.minArr)
-    mypow                                    0x000039a3   Thumb Code    22  lcd.o(i.mypow)
-    sendchar                                 0x00003a4d   Thumb Code    14  uart.o(i.sendchar)
-    sqrt                                     0x00003a5b   Thumb Code    78  sqrt.o(i.sqrt)
-    touchMain                                0x00003aa9   Thumb Code   244  recognize.o(i.touchMain)
-    uart                                     0x00003bd1   Thumb Code    20  recognize.o(i.uart)
-    uart0_set_divisors                       0x00003be5   Thumb Code   230  uart.o(i.uart0_set_divisors)
-    uart2_set_divisors                       0x00003cd5   Thumb Code   230  uart.o(i.uart2_set_divisors)
-    wait_delay                               0x00003dc5   Thumb Code    12  lcd.o(i.wait_delay)
-    Font_24x16                               0x00003e9c   Data        5376  lcd.o(.constdata)
-    asc2_1206                                0x0000539c   Data        1140  lcd.o(.constdata)
-    asc2_1608                                0x00005810   Data        1520  lcd.o(.constdata)
-    Region$$Table$$Base                      0x00005e00   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00005e20   Number         0  anon$$obj.o(Region$$Table)
+    choosePenColor                           0x0000252d   Thumb Code   478  recognize.o(i.choosePenColor)
+    delay1ms                                 0x00002747   Thumb Code    36  recognize.o(i.delay1ms)
+    delay_ms                                 0x0000276b   Thumb Code    22  lcd_touch.o(i.delay_ms)
+    delay_us                                 0x00002781   Thumb Code    12  lcd_touch.o(i.delay_us)
+    fputc                                    0x0000278d   Thumb Code    14  retarget.o(i.fputc)
+    getCount                                 0x0000279b   Thumb Code    48  recognizecode.o(i.getCount)
+    getDelta                                 0x000027cb   Thumb Code    38  recognizecode.o(i.getDelta)
+    getDis                                   0x000027f1   Thumb Code    96  recognizecode.o(i.getDis)
+    getLowerCase                             0x00002851   Thumb Code  1318  recognizecode.o(i.getLowerCase)
+    getNum                                   0x00002d79   Thumb Code   730  recognizecode.o(i.getNum)
+    getTemp                                  0x00003071   Thumb Code    52  recognizecode.o(i.getTemp)
+    getUperCase                              0x000030a5   Thumb Code  1438  recognizecode.o(i.getUperCase)
+    getXY                                    0x00003645   Thumb Code   134  recognize.o(i.getXY)
+    hasIntersection                          0x000036dd   Thumb Code    98  recognizecode.o(i.hasIntersection)
+    initGUI                                  0x00003745   Thumb Code   194  recognize.o(i.initGUI)
+    init_Color_Area                          0x00003865   Thumb Code    60  recognize.o(i.init_Color_Area)
+    init_Color_Area_Diy                      0x000038a5   Thumb Code    80  recognize.o(i.init_Color_Area_Diy)
+    load_Drow_Dialog                         0x00003931   Thumb Code    34  recognize.o(i.load_Drow_Dialog)
+    main                                     0x0000395d   Thumb Code    14  main.o(i.main)
+    maxArr                                   0x0000396b   Thumb Code    32  recognize.o(i.maxArr)
+    minArr                                   0x0000398b   Thumb Code    32  recognize.o(i.minArr)
+    mypow                                    0x000039ab   Thumb Code    22  lcd.o(i.mypow)
+    sendchar                                 0x00003a55   Thumb Code    14  uart.o(i.sendchar)
+    sqrt                                     0x00003a63   Thumb Code    78  sqrt.o(i.sqrt)
+    touchMain                                0x00003ab1   Thumb Code   244  recognize.o(i.touchMain)
+    uart                                     0x00003bd9   Thumb Code    20  recognize.o(i.uart)
+    uart0_set_divisors                       0x00003bed   Thumb Code   230  uart.o(i.uart0_set_divisors)
+    uart2_set_divisors                       0x00003cdd   Thumb Code   230  uart.o(i.uart2_set_divisors)
+    wait_delay                               0x00003dcd   Thumb Code    12  lcd.o(i.wait_delay)
+    Font_24x16                               0x00003ea4   Data        5376  lcd.o(.constdata)
+    asc2_1206                                0x000053a4   Data        1140  lcd.o(.constdata)
+    asc2_1608                                0x00005818   Data        1520  lcd.o(.constdata)
+    Region$$Table$$Base                      0x00005e08   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00005e28   Number         0  anon$$obj.o(Region$$Table)
     POINT_COLOR                              0x10000000   Data           2  lcd.o(.data)
     BACK_COLOR                               0x10000002   Data           2  lcd.o(.data)
     I2C_sla                                  0x1000000c   Data           1  i2c.o(.data)
@@ -1130,9 +1130,9 @@ Memory Map of the image
 
   Image Entry point : 0x000000c5
 
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00005e74, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00005e7c, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00005e20, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00005e28, Max: 0x00080000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1219,49 +1219,49 @@ Memory Map of the image
     0x0000235a   0x0000000e   Code   RO         1279    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x00002368   0x0000000c   Code   RO         1249    i.__set_errno       mc_w.l(errno.o)
     0x00002374   0x000001b8   Code   RO         1045    i._printf_core      mc_w.l(printf3.o)
-    0x0000252c   0x00000208   Code   RO          553    i.choosePenColor    recognize.o
-    0x00002734   0x0000000e   Code   RO          104    i.delay             lcd.o
-    0x00002742   0x00000024   Code   RO          554    i.delay1ms          recognize.o
-    0x00002766   0x00000016   Code   RO          352    i.delay_ms          lcd_touch.o
-    0x0000277c   0x0000000c   Code   RO          353    i.delay_us          lcd_touch.o
-    0x00002788   0x0000000e   Code   RO          843    i.fputc             retarget.o
-    0x00002796   0x00000030   Code   RO          669    i.getCount          recognizecode.o
-    0x000027c6   0x00000026   Code   RO          670    i.getDelta          recognizecode.o
-    0x000027ec   0x00000060   Code   RO          671    i.getDis            recognizecode.o
-    0x0000284c   0x00000522   Code   RO          672    i.getLowerCase      recognizecode.o
-    0x00002d6e   0x00000002   PAD
-    0x00002d70   0x000002f8   Code   RO          674    i.getNum            recognizecode.o
-    0x00003068   0x00000034   Code   RO          675    i.getTemp           recognizecode.o
-    0x0000309c   0x0000059e   Code   RO          676    i.getUperCase       recognizecode.o
-    0x0000363a   0x00000002   PAD
-    0x0000363c   0x00000098   Code   RO          556    i.getXY             recognize.o
-    0x000036d4   0x00000068   Code   RO          677    i.hasIntersection   recognizecode.o
-    0x0000373c   0x00000120   Code   RO          557    i.initGUI           recognize.o
-    0x0000385c   0x00000040   Code   RO          558    i.init_Color_Area   recognize.o
-    0x0000389c   0x00000050   Code   RO          559    i.init_Color_Area_Diy  recognize.o
-    0x000038ec   0x0000003c   Code   RO          105    i.lcd_send          lcd.o
-    0x00003928   0x0000002c   Code   RO          560    i.load_Drow_Dialog  recognize.o
-    0x00003954   0x0000000e   Code   RO            3    i.main              main.o
-    0x00003962   0x00000020   Code   RO          561    i.maxArr            recognize.o
-    0x00003982   0x00000020   Code   RO          562    i.minArr            recognize.o
-    0x000039a2   0x00000016   Code   RO          106    i.mypow             lcd.o
-    0x000039b8   0x00000068   Code   RO          107    i.rd_dat            lcd.o
-    0x00003a20   0x0000002c   Code   RO          108    i.rd_reg            lcd.o
-    0x00003a4c   0x0000000e   Code   RO          751    i.sendchar          uart.o
-    0x00003a5a   0x0000004e   Code   RO          939    i.sqrt              m_ws.l(sqrt.o)
-    0x00003aa8   0x00000128   Code   RO          563    i.touchMain         recognize.o
-    0x00003bd0   0x00000014   Code   RO          564    i.uart              recognize.o
-    0x00003be4   0x000000f0   Code   RO          752    i.uart0_set_divisors  uart.o
-    0x00003cd4   0x000000f0   Code   RO          753    i.uart2_set_divisors  uart.o
-    0x00003dc4   0x0000000c   Code   RO          109    i.wait_delay        lcd.o
-    0x00003dd0   0x00000030   Code   RO          110    i.wr_cmd            lcd.o
-    0x00003e00   0x00000030   Code   RO          111    i.wr_dat            lcd.o
-    0x00003e30   0x00000024   Code   RO          112    i.wr_dat_only       lcd.o
-    0x00003e54   0x00000010   Code   RO          113    i.wr_dat_start      lcd.o
-    0x00003e64   0x00000010   Code   RO          114    i.wr_dat_stop       lcd.o
-    0x00003e74   0x00000028   Code   RO          115    i.wr_reg            lcd.o
-    0x00003e9c   0x00001f64   Data   RO          116    .constdata          lcd.o
-    0x00005e00   0x00000020   Data   RO         1275    Region$$Table       anon$$obj.o
+    0x0000252c   0x0000020c   Code   RO          553    i.choosePenColor    recognize.o
+    0x00002738   0x0000000e   Code   RO          104    i.delay             lcd.o
+    0x00002746   0x00000024   Code   RO          554    i.delay1ms          recognize.o
+    0x0000276a   0x00000016   Code   RO          352    i.delay_ms          lcd_touch.o
+    0x00002780   0x0000000c   Code   RO          353    i.delay_us          lcd_touch.o
+    0x0000278c   0x0000000e   Code   RO          843    i.fputc             retarget.o
+    0x0000279a   0x00000030   Code   RO          669    i.getCount          recognizecode.o
+    0x000027ca   0x00000026   Code   RO          670    i.getDelta          recognizecode.o
+    0x000027f0   0x00000060   Code   RO          671    i.getDis            recognizecode.o
+    0x00002850   0x00000526   Code   RO          672    i.getLowerCase      recognizecode.o
+    0x00002d76   0x00000002   PAD
+    0x00002d78   0x000002f8   Code   RO          674    i.getNum            recognizecode.o
+    0x00003070   0x00000034   Code   RO          675    i.getTemp           recognizecode.o
+    0x000030a4   0x0000059e   Code   RO          676    i.getUperCase       recognizecode.o
+    0x00003642   0x00000002   PAD
+    0x00003644   0x00000098   Code   RO          556    i.getXY             recognize.o
+    0x000036dc   0x00000068   Code   RO          677    i.hasIntersection   recognizecode.o
+    0x00003744   0x00000120   Code   RO          557    i.initGUI           recognize.o
+    0x00003864   0x00000040   Code   RO          558    i.init_Color_Area   recognize.o
+    0x000038a4   0x00000050   Code   RO          559    i.init_Color_Area_Diy  recognize.o
+    0x000038f4   0x0000003c   Code   RO          105    i.lcd_send          lcd.o
+    0x00003930   0x0000002c   Code   RO          560    i.load_Drow_Dialog  recognize.o
+    0x0000395c   0x0000000e   Code   RO            3    i.main              main.o
+    0x0000396a   0x00000020   Code   RO          561    i.maxArr            recognize.o
+    0x0000398a   0x00000020   Code   RO          562    i.minArr            recognize.o
+    0x000039aa   0x00000016   Code   RO          106    i.mypow             lcd.o
+    0x000039c0   0x00000068   Code   RO          107    i.rd_dat            lcd.o
+    0x00003a28   0x0000002c   Code   RO          108    i.rd_reg            lcd.o
+    0x00003a54   0x0000000e   Code   RO          751    i.sendchar          uart.o
+    0x00003a62   0x0000004e   Code   RO          939    i.sqrt              m_ws.l(sqrt.o)
+    0x00003ab0   0x00000128   Code   RO          563    i.touchMain         recognize.o
+    0x00003bd8   0x00000014   Code   RO          564    i.uart              recognize.o
+    0x00003bec   0x000000f0   Code   RO          752    i.uart0_set_divisors  uart.o
+    0x00003cdc   0x000000f0   Code   RO          753    i.uart2_set_divisors  uart.o
+    0x00003dcc   0x0000000c   Code   RO          109    i.wait_delay        lcd.o
+    0x00003dd8   0x00000030   Code   RO          110    i.wr_cmd            lcd.o
+    0x00003e08   0x00000030   Code   RO          111    i.wr_dat            lcd.o
+    0x00003e38   0x00000024   Code   RO          112    i.wr_dat_only       lcd.o
+    0x00003e5c   0x00000010   Code   RO          113    i.wr_dat_start      lcd.o
+    0x00003e6c   0x00000010   Code   RO          114    i.wr_dat_stop       lcd.o
+    0x00003e7c   0x00000028   Code   RO          115    i.wr_reg            lcd.o
+    0x00003ea4   0x00001f64   Data   RO          116    .constdata          lcd.o
+    0x00005e08   0x00000020   Data   RO         1275    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x10000000, Size: 0x000008d0, Max: 0x00008000, ABSOLUTE)
@@ -1295,15 +1295,15 @@ Image component sizes
       3126        110       8036         10          0      32824   lcd.o
       2798        154          0          0         24      36455   lcd_touch.o
         14          0          0          0          0       5875   main.o
-      1680        232          0         22       1632       8185   recognize.o
-      3850        174          0          4          0       9649   recognizecode.o
+      1684        232          0         22       1632       8181   recognize.o
+      3854        174          0          4          0       9653   recognizecode.o
         14          0          0          8          0       2216   retarget.o
         40         12        196          0        512        892   startup_lpc17xx.o
        352         70          0          8          0        799   system_lpc17xx.o
        914         78          0          0          0       4240   uart.o
 
     ----------------------------------------------------------------------
-     13890        958       8264         80       2172     128855   Object Totals
+     13898        958       8264         80       2172     128855   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         10          0          0          6          4          0   (incl. Padding)
 
@@ -1363,15 +1363,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     15832        998       8264         84       2172     125647   Grand Totals
-     15832        998       8264         84       2172     125647   ELF Image Totals
-     15832        998       8264         84          0          0   ROM Totals
+     15840        998       8264         84       2172     125647   Grand Totals
+     15840        998       8264         84       2172     125647   ELF Image Totals
+     15840        998       8264         84          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                24096 (  23.53kB)
+    Total RO  Size (Code + RO Data)                24104 (  23.54kB)
     Total RW  Size (RW Data + ZI Data)              2256 (   2.20kB)
-    Total ROM Size (Code + RO Data + RW Data)      24180 (  23.61kB)
+    Total ROM Size (Code + RO Data + RW Data)      24188 (  23.62kB)
 
 ==============================================================================
 

@@ -326,7 +326,7 @@ char getLowerCase(int x[200], int y[200], int point) {
 
         }
         else {
-            return 'L';
+            return 'l';
         }
 
 
@@ -338,7 +338,7 @@ char getLowerCase(int x[200], int y[200], int point) {
         int count;
         yPos = minY + deltaY * 3 / 4;
         yCount = getCount(start, end, yPos, y);
-				dis = getDis(start,end,y,x,yPos);
+        dis = getDis(start, end, y, x, yPos);
 
         if(yCount == 1) {
             return 'r';
@@ -504,11 +504,12 @@ char getLowerCase(int x[200], int y[200], int point) {
             yPos = minY + deltaY * 3 / 4;
             yCount = getCount(start, end, yPos, y);
 
-            if(yCount > 2) {
+            if(yCount == 3) {
                 return 'a';
-            } else {
+            } else if(yCount == 3) {
                 return 'x';
             }
+            else if(yCount == 1) {}
 
         }
     }
@@ -558,7 +559,7 @@ char getLowerCase(int x[200], int y[200], int point) {
 
 ///////////////еп╤о		e,y		/////////////////////////////////////////////////////////////////
     else if(xCount == 3 && yCount == 2) {
-        if(x[end] < mX) {
+        if(x[end] > mX) {
             return 'e';
         }
         else {

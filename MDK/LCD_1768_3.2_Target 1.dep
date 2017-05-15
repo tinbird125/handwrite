@@ -12,7 +12,7 @@ I (C:\Keil4\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
 I (..\Source\Lcd\touch.h)(0x59190D8F)
 I (..\Source\Lcd\exti.h)(0x59190D8F)
 I (..\Source\I2C\I2C.H)(0x59190D8F)
-I (..\Source\User\recognize.h)(0x59190D8F)
+I (..\Source\User\recognize.h)(0x591942F0)
 I (..\Source\User\uart.h)(0x59190D8F)
 I (C:\Keil4\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
 F (..\Source\Lcd\Lcd.c)(0x59190D8F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil4\ARM\RV31\INC -I C:\Keil4\ARM\CMSIS\Include -I C:\Keil4\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\lcd.o" --omf_browse ".\Obj\lcd.crf" --depend ".\Obj\lcd.d")
@@ -48,9 +48,9 @@ I (C:\Keil4\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
 I (C:\Keil4\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
 I (C:\Keil4\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x4F583772)
 I (..\Source\I2C\i2c.h)(0x59190D8F)
-F (..\Source\User\recognize.c)(0x59194291)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil4\ARM\RV31\INC -I C:\Keil4\ARM\CMSIS\Include -I C:\Keil4\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognize.o" --omf_browse ".\Obj\recognize.crf" --depend ".\Obj\recognize.d")
+F (..\Source\User\recognize.c)(0x591948E7)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil4\ARM\RV31\INC -I C:\Keil4\ARM\CMSIS\Include -I C:\Keil4\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognize.o" --omf_browse ".\Obj\recognize.crf" --depend ".\Obj\recognize.d")
 I (..\Source\Lcd\sys.h)(0x59191DEA)
-I (..\Source\User\recognize.h)(0x59190D8F)
+I (..\Source\User\recognize.h)(0x591942F0)
 I (..\Source\Lcd\lcd.h)(0x59190D8F)
 I (C:\Keil4\ARM\Inc\NXP\LPC17xx\LPC17xx.H)(0x4FF500CC)
 I (C:\Keil4\ARM\CMSIS\Include\core_cm3.h)(0x50062982)
@@ -65,9 +65,9 @@ I (C:\Keil4\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
 I (..\Source\User\uart.h)(0x59190D8F)
 I (C:\Keil4\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
 I (..\Source\User\RecognizeCode.h)(0x59190D8F)
-F (..\Source\User\RecognizeCode.c)(0x591910D6)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil4\ARM\RV31\INC -I C:\Keil4\ARM\CMSIS\Include -I C:\Keil4\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognizecode.o" --omf_browse ".\Obj\recognizecode.crf" --depend ".\Obj\recognizecode.d")
+F (..\Source\User\RecognizeCode.c)(0x5919463F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Source\Lcd -I..\Source\I2C -I C:\Keil4\ARM\RV31\INC -I C:\Keil4\ARM\CMSIS\Include -I C:\Keil4\ARM\Inc\NXP\LPC17xx -DUSE_STDPERIPH_DRIVER -o ".\Obj\recognizecode.o" --omf_browse ".\Obj\recognizecode.crf" --depend ".\Obj\recognizecode.d")
 I (..\Source\Lcd\sys.h)(0x59191DEA)
-I (..\Source\User\recognize.h)(0x59190D8F)
+I (..\Source\User\recognize.h)(0x591942F0)
 I (..\Source\Lcd\lcd.h)(0x59190D8F)
 I (C:\Keil4\ARM\Inc\NXP\LPC17xx\LPC17xx.H)(0x4FF500CC)
 I (C:\Keil4\ARM\CMSIS\Include\core_cm3.h)(0x50062982)
