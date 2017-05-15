@@ -331,26 +331,25 @@ void touchMain() {
         choosePenColor(flag);
         if(!(LPC_GPIO2->FIOPIN & (0X01 << 11))) {
             mode++;
-          
+
             if(mode > 3) {
                 mode = 1;
-            } 
-						LCD_Clear_Area(White, 238, 199, 1, 121);
+            }
+//             LCD_Clear_Area(White, 238, 199, 1, 121);
+							LCD_Clear_Area(White, 238, 16, 1, 101);
             switch(mode) {
             case 1:
+															
                 LCD_ShowString(0, 100, "Number");		 //按rst键屏幕显示的文字
                 break;
             case 2:
                 LCD_ShowString(0, 100, "LowerCase");		 //按rst键屏幕显示的文字
-
                 break;
             case 3:
                 LCD_ShowString(0, 100, "UperCase");		 //按rst键屏幕显示的文字
                 break;
             }
-            delay1ms(300);
-
-            point = 0;
+ LCD_Clear_Area(White, 238, 199, 1, 121);
         }
 
         key =  KEY_Scan();

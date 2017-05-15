@@ -212,26 +212,29 @@ void choosePenColor(int flag) {
         if(point > 0 ) {
             int resultChar, resultNum ;
             if(flag == 0) {
+						
+				
                 if(mode == 0) {
                     resultNum = getNum(x, y, point);
                     printf("\n%d", resultNum);
-                    LCD_ShowNum(20, 80, resultNum, 1, 16);
+                    LCD_ShowNum(80, 60, resultNum, 1, 16);
                 }
                 switch(mode) {
                 case 1:
                     resultNum = getNum(x, y, point);
                     printf("\n%d", resultNum);
-                    LCD_ShowNum(20, 80, resultNum, 1, 16);
+								
+                    LCD_ShowNum(80, 60, resultNum, 1, 16);
                     break;
                 case 2:
                     resultChar = getLowerCase(x, y, point);
                     printf("\nResult:%c", resultChar);
-                    LCD_ShowChar(20, 80, resultChar, 16, 0);
+                    LCD_ShowChar(80, 60, resultChar, 16, 0);
                     break;
                 case 3:
                     resultChar = getUperCase(x, y, point);
                     printf("\nResult:%c", resultChar);
-                    LCD_ShowChar(20, 80, resultChar, 16, 0);
+                    LCD_ShowChar(80, 60, resultChar, 16, 0);
                     break;
                 }
                 point = 0;
@@ -335,22 +338,22 @@ void touchMain() {
             if(mode > 3) {
                 mode = 1;
             }
-            LCD_Clear_Area(White, 238, 199, 1, 121);
+//             LCD_Clear_Area(White, 238, 199, 1, 121);
+            LCD_Clear_Area(White, 238, 16, 1, 101);
             switch(mode) {
             case 1:
-                LCD_ShowString(0, 100, "Number");		 //按rst键屏幕显示的文字
+
+                LCD_ShowString(0, 100, "Mode:Number");		 //按rst键屏幕显示的文字
                 break;
             case 2:
-                LCD_ShowString(0, 100, "LowerCase");		 //按rst键屏幕显示的文字
-
+                LCD_ShowString(0, 100, "Mode:LowerCase");		 //按rst键屏幕显示的文字
                 break;
             case 3:
-                LCD_ShowString(0, 100, "UperCase");		 //按rst键屏幕显示的文字
+                LCD_ShowString(0, 100, "Mode:UperCase");		 //按rst键屏幕显示的文字
                 break;
             }
-            delay1ms(300);
-
-            point = 0;
+            LCD_Clear_Area(White, 238, 199, 1, 121);
+						delay1ms(20);
         }
 
         key =  KEY_Scan();
@@ -398,12 +401,12 @@ void initGUI() {
     Touch_Init();
     LCD_ShowStr(0, 0, "Pen Color:", Blue);
     init_Color_Area_Diy(start_x0, start_y0, 25);	 //画颜色选择块
-    LCD_ShowStr(0, 45 + 5, "Recognized Result:", Blue);
+    LCD_ShowStr(0,60, "Result:", Blue);
     LCD_ShowStr(80, 320 - 16, "Wrint Area", Red);
     LCD_ShowStr(180, 25, "Clear", Red);
     LCD_ShowStr(180, 60, "OK", Red);
     LCD_DrawRectangle(0, 120, 239, 319, Red);	 //画手写区域
-    LCD_ShowString(0, 100, "Number");		 //按rst键屏幕显示的文字
+    LCD_ShowString(0, 100, "Mode:Number");		 //按rst键屏幕显示的文字
     delay1ms(300);
     LCD_Clear_Area(White, 238, 199, 1, 121);
     uart();

@@ -377,10 +377,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>39</ColumnNumber>
+      <ColumnNumber>3</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>376</TopLine>
-      <CurrentLine>401</CurrentLine>
+      <CurrentLine>407</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Source\User\recognize.c</PathWithFileName>
       <FilenameWithoutPath>recognize.c</FilenameWithoutPath>
