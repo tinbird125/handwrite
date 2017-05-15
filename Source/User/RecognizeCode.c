@@ -334,56 +334,36 @@ char getLowerCase(int x[200], int y[200], int point) {
     }
     ////////////////////////		ÅÐ¶Ï£¬u,v,n,r	/////////////////////////////////////////////////////////////
     else if(xCount == 1 && yCount == 2) {
-        int xValue[5], count = 0, absX, i;
+        float dis;
+        int count;
         yPos = minY + deltaY * 3 / 4;
         yCount = getCount(start, end, yPos, y);
+				dis = getDis(start,end,y,x,yPos);
 
-        for(j = start; j < end; j++) {
-            if(hasIntersection(y, j, yPos)) {
-
-                xValue[count]	= x[j]	;
-                count++;
-
-            }
-        }
-        absX = abs(xValue[0] - xValue[1]);
         if(yCount == 1) {
             return 'r';
         }
-        else  if(count >= 2) {
-
-            if((float)absX / abs(minX - maxX) > 0.5) {
-                yPos = minY + deltaY * 1 / 4;
-                yCount = getCount(start, end, yPos, y);
-                if(yCount > 2) {
-                    return 'n';
-                }
-                else {
-                    return 'u';
-                }
+        else  if(dis / deltaX > 0.5) {
+            yPos = minY + deltaY * 1 / 4;
+            yCount = getCount(start, end, yPos, y);
+            if(yCount > 2) {
+                return 'n';
             }
-
             else {
-                count == 0;
-                for(j = start; j < end; j++) {
-                    for(i = j + 1; i < end; i++) {
-                        if(x[j] == x[i]) {
-                            count++;
-                        }
-
-                    }
-                }
-                if(count > 3) {
-                    return 'r';
-                }
-                else {
-                    return 'v';
-                }
-
+                return 'u';
             }
+        }
 
+        else {
+            if(count > 3) {
+                return 'r';
+            }
+            else {
+                return 'v';
+            }
 
         }
+
 
     }
 
@@ -507,7 +487,7 @@ char getLowerCase(int x[200], int y[200], int point) {
 
 ///////////////ÅÐ¶Ï		a,b,d,x,		/////////////////////////////////////////////////////////////////
     else if(xCount == 2 && yCount == 3) {
-        float dis;
+
         yPos = minY + deltaY / 4;
         yCount = getCount(start, end, yPos, y);
 

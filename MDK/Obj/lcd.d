@@ -1,10 +1,10 @@
 .\Obj\lcd.o: ..\Source\Lcd\Lcd.c
-.\Obj\lcd.o: C:\Keil_v5\ARM\Inc\NXP\LPC17xx\lpc17xx.h
-.\Obj\lcd.o: C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h
-.\Obj\lcd.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
-.\Obj\lcd.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
-.\Obj\lcd.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
-.\Obj\lcd.o: C:\Keil_v5\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h
+.\Obj\lcd.o: C:\Keil4\ARM\Inc\NXP\LPC17xx\lpc17xx.h
+.\Obj\lcd.o: C:\Keil4\ARM\CMSIS\Include\core_cm3.h
+.\Obj\lcd.o: C:\Keil4\ARM\ARMCC\bin\..\include\stdint.h
+.\Obj\lcd.o: C:\Keil4\ARM\CMSIS\Include\core_cmInstr.h
+.\Obj\lcd.o: C:\Keil4\ARM\CMSIS\Include\core_cmFunc.h
+.\Obj\lcd.o: C:\Keil4\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h
 .\Obj\lcd.o: ..\Source\Lcd\LCD.h
 .\Obj\lcd.o: ..\Source\Lcd\sys.h
 .\Obj\lcd.o: ..\Source\Lcd\Font_24x16.h

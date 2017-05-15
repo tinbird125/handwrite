@@ -442,9 +442,9 @@
               <FilePath>..\Source\User\recognize.c</FilePath>
             </File>
             <File>
-              <FileName>bayes.c</FileName>
+              <FileName>RecognizeCode.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\User\bayes.c</FilePath>
+              <FilePath>..\Source\User\RecognizeCode.c</FilePath>
             </File>
           </Files>
         </Group>

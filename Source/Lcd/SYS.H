@@ -30,6 +30,5 @@ typedef unsigned       __int64 u64;
 #define   GPIO0_8      (*((volatile unsigned long *) (0x22000000+ (0X2009C015-0x20000000)*32 + 0*4)))
 #define   GPIO2_10	   (*((volatile unsigned long *) (0x22000000+ (0x2009C054-0x20000000)*32 + 10*4)))
 #define   SW1          GPIO2_10
-
 #endif
 

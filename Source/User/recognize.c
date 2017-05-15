@@ -17,6 +17,7 @@ u16 start_x0 = 0 ; //矩形起点x坐标x0=0
 u16 start_y0 = 20 ; //举行起点y坐眣0=20
 int point = 0;
 int x[200];
+int mode = 0;
 int  y[200];
 char clearFlag = 1;
 char okFlag = 1;
@@ -173,8 +174,7 @@ u8 KEY_Scan(void)
         delay1ms(2);
     if(!SW1)
         return 1;
-    else
-        return 0;
+    return 0;
 }
 
 
@@ -186,7 +186,7 @@ u8 KEY_Scan(void)
 *   Parameter:    cnt:
 *   Return:         cnt:
 *******************************************************************************/
-void choose_Pen_Color(int flag) {
+void choosePenColor(int flag) {
     if(Blue_Pen) {
         POINT_COLOR = Blue;
 
@@ -203,23 +203,39 @@ void choose_Pen_Color(int flag) {
         POINT_COLOR = Green;
     }
     if(Clear_Area) {
-        LCD_Clear_Area(White, 238, 219, 1, 101);
+        LCD_Clear_Area(White, 238, 199, 1, 121);
         clearFlag = 0;
         point = 0;
     }
     //识别
     if(OK_Area) {
         if(point > 0 ) {
-            int resultChar,resultNum ;
+            int resultChar, resultNum ;
             if(flag == 0) {
+                if(mode == 0) {
                     resultNum = getNum(x, y, point);
                     printf("\n%d", resultNum);
-//                 resultChar = getLowerCase(x, y, point);
-//                 printf("\nResult:%c", resultChar);
-//                 LCD_ShowChar(0, 70, resultChar, 16, 0);
-							LCD_ShowNum(0,70,resultNum,1,16);
+                    LCD_ShowNum(0, 70, resultNum, 1, 16);
+                }
+                switch(mode) {
+                case 1:
+                    resultNum = getNum(x, y, point);
+                    printf("\n%d", resultNum);
+                    LCD_ShowNum(0, 70, resultNum, 1, 16);
+                    break;
+                case 2:
+                    resultChar = getLowerCase(x, y, point);
+                    printf("\nResult:%c", resultChar);
+                    LCD_ShowChar(0, 70, resultChar, 16, 0);
+                    break;
+                case 3:
+                    resultChar = getUperCase(x, y, point);
+                    printf("\nResult:%c", resultChar);
+                    LCD_ShowChar(0, 70, resultChar, 16, 0);
+                    break;
+                }
                 point = 0;
-                LCD_Clear_Area(White, 219, 238, 1, 101);
+                LCD_Clear_Area(White, 238, 199, 1, 121);
                 flag = 1;
             }
         }
@@ -290,8 +306,6 @@ int minArr(int a[200], int size) {
     return min;
 }
 
-
-
 /*******************************************************************************
 *        主函数
 *   name:
@@ -314,7 +328,29 @@ void touchMain() {
             load_Drow_Dialog();
         }
 
-        choose_Pen_Color(flag);
+        choosePenColor(flag);
+        if(!(LPC_GPIO2->FIOPIN & (0X01 << 11))) {
+            mode++;
+            if(mode > 3) {
+                mode = 1;
+            }
+            switch(mode) {
+            case 1:
+                LCD_ShowString(80, 200, "Number");		 //按rst键屏幕显示的文字
+                break;
+            case 2:
+                LCD_ShowString(80, 200, "LowerCase");		 //按rst键屏幕显示的文字
+
+                break;
+            case 3:
+                LCD_ShowString(80, 200, "UperCase");		 //按rst键屏幕显示的文字
+                break;
+            }
+            delay1ms(300);
+            LCD_Clear_Area(White, 238, 199, 1, 121);
+            point = 0;
+        }
+
         key =  KEY_Scan();
         if(Pen_Point.Key_Sta == Key_Down)									//触摸屏被按下
         {
@@ -364,6 +400,9 @@ void initGUI() {
     LCD_ShowStr(80, 320 - 16, "Wrint Area", Red);
     LCD_ShowStr(180, 25, "Clear", Red);
     LCD_ShowStr(180, 60, "OK", Red);
-    LCD_DrawRectangle(0, 100, 239, 319, Red);	 //画手写区域
+    LCD_DrawRectangle(0, 120, 239, 319, Red);	 //画手写区域
+    LCD_ShowString(80, 200, "Number");		 //按rst键屏幕显示的文字
+    delay1ms(300);
+    LCD_Clear_Area(White, 238, 199, 1, 121);
     uart();
 }
